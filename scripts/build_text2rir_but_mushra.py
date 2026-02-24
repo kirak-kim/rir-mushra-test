@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 import argparse
+import contextlib
 import csv
 import html
 import json
 import os
 import random
 import sys
+import wave
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
@@ -171,6 +173,11 @@ def parse_args() -> argparse.Namespace:
         "--no-symlinks",
         action="store_true",
         help="Do not create/update symlinks. Use if assets are already exposed by your web server.",
+    )
+    p.add_argument(
+        "--no-align-audio-lengths",
+        action="store_true",
+        help="Skip per-trial WAV length alignment (zero-padding to max length).",
     )
     return p.parse_args()
 
@@ -354,6 +361,84 @@ def librispeech_rel_path(split: str, utt_id: str, ext: str) -> str:
 def check_path_exists(path: Path, label: str) -> None:
     if not path.exists():
         raise FileNotFoundError(f"{label} not found: {path}")
+
+
+def wav_nframes(path: Path) -> int:
+    with contextlib.closing(wave.open(str(path), "rb")) as w:
+        return w.getnframes()
+
+
+def pad_wav_to_frames(path: Path, target_frames: int) -> int:
+    with contextlib.closing(wave.open(str(path), "rb")) as w:
+        params = w.getparams()
+        current_frames = w.getnframes()
+        raw = w.readframes(current_frames)
+
+    if current_frames == target_frames:
+        return 0
+
+    frame_size = params.nchannels * params.sampwidth
+    if current_frames < target_frames:
+        raw += b"\x00" * ((target_frames - current_frames) * frame_size)
+    else:
+        raw = raw[: target_frames * frame_size]
+
+    with contextlib.closing(wave.open(str(path), "wb")) as w:
+        w.setparams(params)
+        w.writeframes(raw)
+
+    return target_frames - current_frames
+
+
+def align_rows_audio_lengths(repo_root: Path, rows_for_config: List[dict]) -> Tuple[int, int, int]:
+    changed_trials = 0
+    changed_files = 0
+    max_added_frames = 0
+
+    for row in rows_for_config:
+        paths = [repo_root / row["reference_url"]]
+        for _, rel in row["audio_urls"].items():
+            paths.append(repo_root / rel)
+
+        # Deduplicate (reference and hidden ref can be same file).
+        uniq_paths = []
+        seen = set()
+        for p in paths:
+            sp = str(p)
+            if sp in seen:
+                continue
+            seen.add(sp)
+            uniq_paths.append(p)
+
+        infos = []
+        for p in uniq_paths:
+            with contextlib.closing(wave.open(str(p), "rb")) as w:
+                infos.append((p, w.getnframes(), w.getframerate(), w.getnchannels(), w.getsampwidth()))
+
+        if not infos:
+            continue
+
+        sr = infos[0][2]
+        ch = infos[0][3]
+        sw = infos[0][4]
+        for p, nframes, psr, pch, psw in infos:
+            if psr != sr or pch != ch or psw != sw:
+                raise RuntimeError(
+                    f"Cannot align due to format mismatch in trial {row.get('trial_index')}: {p}"
+                )
+
+        target_frames = max(info[1] for info in infos)
+        if any(info[1] != target_frames for info in infos):
+            changed_trials += 1
+
+        for p, nframes, _, _, _ in infos:
+            if nframes != target_frames:
+                delta = pad_wav_to_frames(p, target_frames)
+                changed_files += 1
+                if delta > max_added_frames:
+                    max_added_frames = delta
+
+    return changed_trials, changed_files, max_added_frames
 
 
 def load_eval_bundle(root: Path) -> Tuple[Dict[str, dict], Dict[str, dict]]:
@@ -733,6 +818,13 @@ def main() -> int:
             add_yaml_kv(lines, 6, "writeResults", page["writeResults"])
 
     output_config.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    if not args.no_align_audio_lengths:
+        changed_trials, changed_files, max_added_frames = align_rows_audio_lengths(REPO_ROOT, rows_for_config)
+        print(
+            f"[INFO] Audio length alignment: trials_adjusted={changed_trials}, "
+            f"files_padded={changed_files}, max_added_frames={max_added_frames}"
+        )
 
     print(f"[OK] Wrote config: {output_config}")
     print(f"[OK] Wrote trial CSV: {output_trial_csv}")
