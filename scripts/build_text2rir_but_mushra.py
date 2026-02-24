@@ -275,6 +275,10 @@ def build_intro_html(reference_mode: str) -> str:
             "  <p><strong>EN</strong> On each page, inspect the room image and prompt, then rate how well each presented speech sample matches the expected reverberation characteristics of that room/prompt. Higher scores mean better quality/match.</p>",
             f"  <p><strong>KO</strong> {html.escape(ref_note_ko)}</p>",
             f"  <p><strong>EN</strong> {html.escape(ref_note_en)}</p>",
+            "  <p><strong>KO</strong> 원본(reference)과 동일한 조건(숨은 기준음, hidden reference)이 포함되어 있습니다. 해당 조건에는 100점을 주고, 나머지 조건은 자유롭게 평가해 주세요.</p>",
+            "  <p><strong>EN</strong> One condition is identical to the reference (a hidden reference). Please give that condition a score of 100, and rate the other conditions freely.</p>",
+            "  <p><strong>KO</strong> 품질이 낮은 신호(앵커)도 포함되어 있습니다.</p>",
+            "  <p><strong>EN</strong> A low-quality signal (anchor) is also included.</p>",
             "  <p><strong>KO</strong> 조건 이름은 숨겨질 수 있으며 재생 순서는 무작위입니다.</p>",
             "  <p><strong>EN</strong> Condition identities may be hidden, and playback order is randomized.</p>",
             "</div>",
@@ -294,12 +298,29 @@ def build_participant_form_content_html() -> str:
     )
 
 
+def build_practice_trial_html() -> str:
+    return "\n".join(
+        [
+            "<div class='t2r-context-card'>",
+            "  <div class='t2r-context-label'>Practice Trial / 연습 Trial</div>",
+            "  <p><strong>KO</strong> 이 페이지에서 조작법을 익힌 뒤 다음 페이지부터 본 실험이 시작됩니다.</p>",
+            "  <p><strong>EN</strong> Use this page to learn the controls. The main experiment starts on the next page.</p>",
+            "  <p><strong>KO</strong> 상단의 큰 <strong>Stop</strong> 버튼은 전체 재생을 멈춥니다.</p>",
+            "  <p><strong>EN</strong> The large <strong>Stop</strong> button at the top stops playback.</p>",
+            "  <p><strong>KO</strong> 각 조건 버튼을 누르면 해당 음원이 재생됩니다. 다른 조건으로 바꿔도 처음부터 다시 시작되지 않고, 같은 시간 위치에서 이어서 재생됩니다.</p>",
+            "  <p><strong>EN</strong> Press condition buttons to play sounds. Switching conditions does not restart from the beginning; playback continues from the same time position.</p>",
+            "  <p><strong>KO</strong> 슬라이더는 점수 입력용이며, 루프/구간 조작은 재생 구간을 바꾸는 기능입니다(활성화된 경우).</p>",
+            "  <p><strong>EN</strong> Sliders are for scoring. Loop/segment controls (if enabled) change the playback region.</p>",
+            "  <p><strong>KO</strong> 여러 버튼을 눌러보면서 적응해 보세요. 연습 trial 결과는 제출되지 않습니다.</p>",
+            "  <p><strong>EN</strong> Try multiple buttons to get comfortable. Practice-trial responses are not submitted.</p>",
+            "</div>",
+        ]
+    )
+
+
 def build_trial_content_html(trial_idx: int, total_trials: int, row: dict) -> str:
     prompt = html.escape(row["prompt"])
     image_url = html.escape(row["image_url"])
-    utt_id = html.escape(row["utt_id"])
-    room_short = html.escape(row.get("room_short", ""))
-    rir_gt_name = html.escape(row["rir_gt_name"])
     speech_text = html.escape(row.get("speech_text", ""))
 
     speech_block = ""
@@ -321,12 +342,6 @@ def build_trial_content_html(trial_idx: int, total_trials: int, row: dict) -> st
             "      <div class='t2r-context-label'>Prompt / 프롬프트</div>",
             f"      <div class='t2r-context-prompt'>{prompt}</div>",
             speech_block.rstrip("\n"),
-            "      <div class='t2r-context-meta'>",
-            f"        Trial {trial_idx}/{total_trials}<br/>",
-            f"        utt_id: {utt_id}<br/>",
-            f"        room: {room_short}<br/>",
-            f"        rir_gt_name: {rir_gt_name}",
-            "      </div>",
             "      <div class='t2r-context-note'>",
             "        KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>",
             "        EN: Rate based on reverberation match to the image/prompt and overall naturalness.",
@@ -339,15 +354,15 @@ def build_trial_content_html(trial_idx: int, total_trials: int, row: dict) -> st
 
 
 def build_finish_html(contact_phone: str) -> str:
-    phone = html.escape(contact_phone)
     return "\n".join(
         [
             "<div class='t2r-context-card'>",
             "  <div class='t2r-context-label'>Thank You / 감사합니다</div>",
+            "  <p style='text-align:center; margin:0.4em 0 0.9em 0;'><img class='t2r-thankyou-image' src='design/images/epic.jpg' alt='Thank you image' /></p>",
             "  <p><strong>KO</strong> 참여해 주셔서 감사합니다. 아래 제출 버튼을 눌러 결과를 저장해 주세요.</p>",
             "  <p><strong>EN</strong> Thank you for participating. Please press submit below to save your results.</p>",
-            f"  <p><strong>KO</strong> 참가 선물을 받기 위해 연구자에게 연락해 주세요: <strong>{phone}</strong></p>",
-            f"  <p><strong>EN</strong> To receive the participation gift, please contact the experimenter: <strong>{phone}</strong></p>",
+            "  <p><strong>KO</strong> 참가 선물 관련 문의는 실험자에게 연락해 주세요.</p>",
+            "  <p><strong>EN</strong> For participation gift inquiries, please contact the experimenter.</p>",
             "</div>",
         ]
     )
@@ -720,6 +735,28 @@ def main() -> int:
             "id": "intro_ko_en",
             "name": "Instructions / 안내",
             "content": build_intro_html(args.reference_mode),
+        }
+    )
+    pages.append(
+        {
+            "type": "mushra",
+            "id": "practice_trial_controls",
+            "name": "Practice Trial",
+            "content": build_practice_trial_html(),
+            "showWaveform": bool(args.show_waveform),
+            "enableLooping": not args.disable_looping,
+            "strict": False,
+            "reference": "configs/resources/audio/mono_ref.wav",
+            "createAnchor35": False,
+            "createAnchor70": False,
+            "randomize": False,
+            "showConditionNames": True,
+            "stimuli": {
+                "Practice_A": "configs/resources/audio/mono_c1.wav",
+                "Practice_B": "configs/resources/audio/mono_c2.wav",
+                "Practice_C": "configs/resources/audio/mono_c3.wav",
+            },
+            "switchBack": False,
         }
     )
 

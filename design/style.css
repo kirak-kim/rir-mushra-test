@@ -281,6 +281,14 @@ td.stopButton {
   color: #555;
 }
 
+.t2r-thankyou-image {
+  display: inline-block;
+  max-width: min(100%, 520px);
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+}
+
 @media (max-width: 860px) {
   .t2r-context-grid {
     grid-template-columns: 1fr;

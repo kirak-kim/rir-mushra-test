@@ -47,9 +47,43 @@ pages:
           <p><strong>EN</strong> On each page, inspect the room image and prompt, then rate how well each presented speech sample matches the expected reverberation characteristics of that room/prompt. Higher scores mean better quality/match.</p>
           <p><strong>KO</strong> Reference 버튼은 최신 시스템의 GT convolved speech입니다.</p>
           <p><strong>EN</strong> The Reference button plays the latest-system GT convolved speech.</p>
+          <p><strong>KO</strong> 원본(reference)과 동일한 조건(숨은 기준음, hidden reference)이 포함되어 있습니다. 해당 조건에는 100점을 주고, 나머지 조건은 자유롭게 평가해 주세요.</p>
+          <p><strong>EN</strong> One condition is identical to the reference (a hidden reference). Please give that condition a score of 100, and rate the other conditions freely.</p>
+          <p><strong>KO</strong> 품질이 낮은 신호(앵커)도 포함되어 있습니다.</p>
+          <p><strong>EN</strong> A low-quality signal (anchor) is also included.</p>
           <p><strong>KO</strong> 조건 이름은 숨겨질 수 있으며 재생 순서는 무작위입니다.</p>
           <p><strong>EN</strong> Condition identities may be hidden, and playback order is randomized.</p>
         </div>
+    - type: 'mushra'
+      id: 'practice_trial_controls'
+      name: 'Practice Trial'
+      content: |-
+        <div class='t2r-context-card'>
+          <div class='t2r-context-label'>Practice Trial / 연습 Trial</div>
+          <p><strong>KO</strong> 이 페이지에서 조작법을 익힌 뒤 다음 페이지부터 본 실험이 시작됩니다.</p>
+          <p><strong>EN</strong> Use this page to learn the controls. The main experiment starts on the next page.</p>
+          <p><strong>KO</strong> 상단의 큰 <strong>Stop</strong> 버튼은 전체 재생을 멈춥니다.</p>
+          <p><strong>EN</strong> The large <strong>Stop</strong> button at the top stops playback.</p>
+          <p><strong>KO</strong> 각 조건 버튼을 누르면 해당 음원이 재생됩니다. 다른 조건으로 바꿔도 처음부터 다시 시작되지 않고, 같은 시간 위치에서 이어서 재생됩니다.</p>
+          <p><strong>EN</strong> Press condition buttons to play sounds. Switching conditions does not restart from the beginning; playback continues from the same time position.</p>
+          <p><strong>KO</strong> 슬라이더는 점수 입력용이며, 루프/구간 조작은 재생 구간을 바꾸는 기능입니다(활성화된 경우).</p>
+          <p><strong>EN</strong> Sliders are for scoring. Loop/segment controls (if enabled) change the playback region.</p>
+          <p><strong>KO</strong> 여러 버튼을 눌러보면서 적응해 보세요. 연습 trial 결과는 제출되지 않습니다.</p>
+          <p><strong>EN</strong> Try multiple buttons to get comfortable. Practice-trial responses are not submitted.</p>
+        </div>
+      showWaveform: false
+      enableLooping: true
+      strict: false
+      reference: 'configs/resources/audio/mono_ref.wav'
+      createAnchor35: false
+      createAnchor70: false
+      randomize: false
+      showConditionNames: true
+      stimuli:
+          Practice_A: 'configs/resources/audio/mono_c1.wav'
+          Practice_B: 'configs/resources/audio/mono_c2.wav'
+          Practice_C: 'configs/resources/audio/mono_c3.wav'
+      switchBack: false
     - type: 'mushra'
       id: 'trial_001_4970-29093-0015'
       name: 'Trial 1'
@@ -65,12 +99,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance away, with early reflections bouncing off nearby furniture and surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>YOU CAN BEGIN BY CARRYING A ROD AND PUTTING DOWN THE FIGURES</div>
-              <div class='t2r-context-meta'>
-                Trial 1/30<br/>
-                utt_id: 4970-29093-0015<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_mid_width_emitting__0d15f5df.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -107,12 +135,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and wide, directed back and right, with the microphone placed high and wide, directed forward and down, capturing direct sound from 4-8 meters away, early reflections off nearby surfaces, and late reverberation cues.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>JUST THEN LEOCADIA CAME TO HERSELF AND EMBRACING THE CROSS SEEMED CHANGED INTO A SEA OF TEARS AND THE GENTLEMAN REMAINED IN UTTER BEWILDERMENT UNTIL HIS WIFE HAD REPEATED TO HIM FROM BEGINNING TO END LEOCADIA&#x27;S WHOLE STORY AND HE BELIEVED IT THROUGH THE BLESSED DISPENSATION OF HEAVEN WHICH HAD CONFIRMED IT BY SO MANY CONVINCING TESTIMONIES</div>
-              <div class='t2r-context-meta'>
-                Trial 2/30<br/>
-                utt_id: 5639-40744-0030<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_wide_directed_back_and_7e34e55d.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -149,12 +171,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and wide, directed left and level, with the microphone placed low and close to a wall, capturing direct sound from 2-4 meters away, as well as early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>HE HAD GOT INTO HER COURTYARD</div>
-              <div class='t2r-context-meta'>
-                Trial 3/30<br/>
-                utt_id: 8555-292519-0011<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_wide_directed_left__4f8f3924.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -191,12 +207,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance away, with direct path at 1-2m and left-up orientation, amidst medium furniture density and scattered objects.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>IT SOUNDED DULL IT SOUNDED STRANGE AND ALL THE MORE SO BECAUSE OF HIS MAIN CONDITION WHICH WAS</div>
-              <div class='t2r-context-meta'>
-                Trial 4/30<br/>
-                utt_id: 121-127105-0034<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_mid_width_emitting__d47f940f.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -233,12 +243,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed high, low-depth, and mid-height, with a direct path of 4-8 meters, and early reflections bouncing off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>CONTROL YOURSELVES MY DEARS REPLIED THE BOOLOOROO THE WORST PUNISHMENT I KNOW HOW TO INFLICT ON ANYONE THIS PRISONER IS ABOUT TO SUFFER YOU&#x27;LL SEE A VERY PRETTY PATCHING MY ROYAL DAUGHTERS</div>
-              <div class='t2r-context-meta'>
-                Trial 5/30<br/>
-                utt_id: 8555-284447-0010<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_mid_width_emitting__9e0ecfac.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -275,12 +279,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed low, high, and directed downwards, with a direct path of 1-2 meters, amidst medium furniture density and background noise.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>IT IS ALSO NOTICEABLE THAT THE SERVICEABILITY OF CONSUMPTION AS A MEANS OF REPUTE AS WELL AS THE INSISTENCE ON IT AS AN ELEMENT OF DECENCY IS AT ITS BEST IN THOSE PORTIONS OF THE COMMUNITY WHERE THE HUMAN CONTACT OF THE INDIVIDUAL IS WIDEST AND THE MOBILITY OF THE POPULATION IS GREATEST</div>
-              <div class='t2r-context-meta'>
-                Trial 6/30<br/>
-                utt_id: 3570-5695-0012<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_mid_width_emitting_fro_377d98d8.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -317,12 +315,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and left, directing sound upwards and to the front-left, with the microphone placed low and right, pointing down, capturing direct sound from 4-8 meters away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>THE GREETING OF THE APOSTLE IS REFRESHING</div>
-              <div class='t2r-context-meta'>
-                Trial 7/30<br/>
-                utt_id: 2830-3980-0040<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_high_and_left_directing_sound__e0b3ed88.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -359,12 +351,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and left, directed front-left and up, with the microphone placed low and mid, directed back-right and up, at a direct-path distance of 2-4m, amidst medium furniture density and background noise.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>NO SOUND BROKE THE STILLNESS OF THE NIGHT</div>
-              <div class='t2r-context-meta'>
-                Trial 8/30<br/>
-                utt_id: 6930-81414-0003<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_high_and_left_directed_front_l_e838cf92.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -401,12 +387,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and left, directing sound upwards and to the front-left, with the microphone placed low and mid, facing front, and at a direct-path distance of several meters, capturing early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>THE WIND BEING ADVERSE THE DOBRYNA DID NOT MAKE VERY RAPID PROGRESS BUT AS THE WEATHER IN SPITE OF A FEW CLOUDS REMAINED CALM AND THE SEA WAS QUITE SMOOTH SHE WAS ENABLED TO HOLD A STEADY COURSE</div>
-              <div class='t2r-context-meta'>
-                Trial 9/30<br/>
-                utt_id: 5105-28240-0006<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_high_and_left_directing_sound__4c89067d.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -443,12 +423,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance away, with early reflections bouncing off nearby furniture and surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>WHY SHOULD I RUST AND BE STUPID AND SIT IN INACTION BECAUSE I AM A GIRL</div>
-              <div class='t2r-context-meta'>
-                Trial 10/30<br/>
-                utt_id: 4970-29095-0034<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_mid_width_emitting__bcdcf67d.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -485,12 +459,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and mid-distance, directed to the right, with the microphone placed low and mid-distance, directed backwards and downwards, capturing direct sound from 4-8 meters away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>NOW WHEN HAS HORROR EVER EXCLUDED STUDY</div>
-              <div class='t2r-context-meta'>
-                Trial 11/30<br/>
-                utt_id: 4507-16021-0014<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_high_and_mid_distance_direc_ce31ccaa.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -527,12 +495,6 @@ pages:
               <div class='t2r-context-prompt'>In a very large hotel conference room with glass and brick walls, carpeted floor, and wooden ceiling, sound emanates from a source positioned low and mid-distance, directed frontward, with the mic placed high above, directed front-left and down, capturing direct sound from 8-16m away, and early reflections off nearby wooden desks and chairs.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>I COULD NOT SEE MY BOY INJURED EXCELLENCE FOR BUT DOING HIS DUTY AS ONE OF CUMBERLAND&#x27;S SONS</div>
-              <div class='t2r-context-meta'>
-                Trial 12/30<br/>
-                utt_id: 61-70968-0017<br/>
-                room: CR2<br/>
-                rir_gt_name: in_a_very_large_hotel_conference_room_with_glass_and_brick_walls_carpeted_floor_and_wooden_ceiling_sound_em_9f9498a1.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -569,12 +531,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source positioned high and mid-width, emitting to the right, is captured by a microphone placed high and low in width, directed right, with a direct path of 1-2 meters, amidst medium furniture density and background noise.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>I THANK HIM AND TAKE MY LEAVE</div>
-              <div class='t2r-context-meta'>
-                Trial 13/30<br/>
-                utt_id: 3729-6852-0021<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_positioned_high_and_mid_width_emitting_to_th_9a985b47.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -611,12 +567,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source positioned high and mid-width, directing sound to the right, is captured by a microphone placed high and mid-width, angled down and left, with a direct path of 1-2 meters, amidst medium furniture density and background noise.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>I NEVER HAD ANY FAMILY</div>
-              <div class='t2r-context-meta'>
-                Trial 14/30<br/>
-                utt_id: 3729-6852-0010<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_positioned_high_and_mid_width_directing_soun_06f17666.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -653,12 +603,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and wide, directed left and level, with the microphone placed low and wide, directed right and level, at a direct-path distance of 0.5-1m, amidst medium furniture density and background noise, with early reflections bouncing off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>WE HAVE COME FROM A FAR LONELIER PLACE THAN THIS A LONELIER PLACE</div>
-              <div class='t2r-context-meta'>
-                Trial 15/30<br/>
-                utt_id: 1284-1180-0012<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_wide_directed_left__d62d1442.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -695,12 +639,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance, directed right, with a direct path of 2-4 meters, and early reflections bouncing off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>ONE HARDLY LIKES TO THROW SUSPICION WHERE THERE ARE NO PROOFS</div>
-              <div class='t2r-context-meta'>
-                Trial 16/30<br/>
-                utt_id: 1580-141083-0040<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_mid_width_emitting_fro_78f71fb7.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -737,12 +675,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and high to the left, with the microphone placed low and mid, directed back-left and up, capturing direct sound from 1-2m away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>I HAD TO READ IT OVER CAREFULLY AS THE TEXT MUST BE ABSOLUTELY CORRECT</div>
-              <div class='t2r-context-meta'>
-                Trial 17/30<br/>
-                utt_id: 1580-141083-0004<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_high_to_the_left_with__8cd63d4a.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -779,12 +711,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and mid-distance, directed right and level, with the mic placed high, low-depth, and directed front and down, capturing direct sound from 1-2m away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>IT BLAZED UP FAMOUSLY HELP HELP</div>
-              <div class='t2r-context-meta'>
-                Trial 18/30<br/>
-                utt_id: 672-122797-0031<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_high_and_mid_distance_direc_b885f85e.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -821,12 +747,6 @@ pages:
               <div class='t2r-context-prompt'>In a very large hotel conference room with glass and brick walls, carpeted floor, and wooden ceiling, sound emanates from a high and distant source positioned above and behind, directed backwards and level, captured by a microphone placed low and far, angled backwards and downwards, with a direct path of 4-8 meters, and early reflections off wooden desks and chairs.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>MARY TAYLOR HOWEVER RELATED THE TALE OF ZORA TO MISSUS GREY&#x27;S PRIVATE EAR LATER</div>
-              <div class='t2r-context-meta'>
-                Trial 19/30<br/>
-                utt_id: 1995-1836-0013<br/>
-                room: CR2<br/>
-                rir_gt_name: in_a_very_large_hotel_conference_room_with_glass_and_brick_walls_carpeted_floor_and_wooden_ceiling_sound_em_2272fc51.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -863,12 +783,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and wide, directed left and level, with the microphone placed low and close to a wall, capturing direct sound from 2-4 meters away, as well as early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>THUS IT IS THAT THE HONOR OF THREE IS SAVED OUR COUNTRY&#x27;S OUR MASTER&#x27;S AND OUR OWN</div>
-              <div class='t2r-context-meta'>
-                Trial 20/30<br/>
-                utt_id: 6930-75918-0015<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_wide_directed_left__2dd35ac1.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -905,12 +819,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed high and mid-width, directed downwards, with a direct path of 2-4 meters, and early reflections bouncing off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>AMONG THE COUNTRY POPULATION ITS PLACE IS TO SOME EXTENT TAKEN BY SAVINGS AND HOME COMFORTS KNOWN THROUGH THE MEDIUM OF NEIGHBORHOOD GOSSIP SUFFICIENTLY TO SERVE THE LIKE GENERAL PURPOSE OF PECUNIARY REPUTE</div>
-              <div class='t2r-context-meta'>
-                Trial 21/30<br/>
-                utt_id: 3570-5695-0014<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_mid_width_emitting_fro_4386bccc.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -947,12 +855,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and mid-distance, directed to the right, with the microphone placed low and mid-distance, directed back-left and up, capturing direct sound from 4-8m away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>THEN TURNING TO JANE SHE ASKED IN A SOMEWHAT ALTERED TONE HAS SHE BEEN A GOOD GIRL JANE</div>
-              <div class='t2r-context-meta'>
-                Trial 22/30<br/>
-                utt_id: 7021-79740-0007<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_high_and_mid_distance_directed_e6716f63.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -989,12 +891,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and mid-distance, directed to the right, with the microphone placed mid-distance, directed to the right, capturing direct sound and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>AFTER AN APPRENTICESHIP ON A MERCHANT SHIP HE HAD ENTERED THE IMPERIAL NAVY AND HAD ALREADY REACHED THE RANK OF LIEUTENANT WHEN THE COUNT APPOINTED HIM TO THE CHARGE OF HIS OWN PRIVATE YACHT IN WHICH HE WAS ACCUSTOMED TO SPEND BY FAR THE GREATER PART OF HIS TIME THROUGHOUT THE WINTER GENERALLY CRUISING IN THE MEDITERRANEAN WHILST IN THE SUMMER HE VISITED MORE NORTHERN WATERS</div>
-              <div class='t2r-context-meta'>
-                Trial 23/30<br/>
-                utt_id: 5105-28241-0001<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_high_and_mid_distance_directed_832fe2ed.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -1031,12 +927,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and wide, directed back and right, with the microphone placed mid-width, low in depth, and low in height, directed right, capturing direct sound from 2-4 meters away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>AT THE SUDDEN SHARP STING OF IT THE GREAT BIRD TURNED HIS HEAD AND NOTICED FOR THE FIRST TIME THE FISHERMAN STANDING ON THE BANK</div>
-              <div class='t2r-context-meta'>
-                Trial 24/30<br/>
-                utt_id: 7176-88083-0025<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_wide_directed_back_and_b406fa90.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -1073,12 +963,6 @@ pages:
               <div class='t2r-context-prompt'>In a very large hotel conference room with glass and brick walls, carpeted floor, and wooden ceiling, sound emanates from a source positioned mid-width, mid-depth, and mid-height, directed front-right, with the mic placed low-width, high-depth, and low-height, directed back and up, capturing direct sound from 4-8m away, and early reflections off distant walls and wooden desks.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>UP IN THE SICK ROOM ZORA LAY ON THE LITTLE WHITE BED</div>
-              <div class='t2r-context-meta'>
-                Trial 25/30<br/>
-                utt_id: 1995-1837-0022<br/>
-                room: CR2<br/>
-                rir_gt_name: in_a_very_large_hotel_conference_room_with_glass_and_brick_walls_carpeted_floor_and_wooden_ceiling_sound_em_5c0a3012.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -1115,12 +999,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance away, with direct path at 1-2m and left-up orientation, amidst medium furniture density and scattered objects.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>THEREFORE DON&#x27;T TALK TO ME ABOUT VIEWS AND PROSPECTS</div>
-              <div class='t2r-context-meta'>
-                Trial 26/30<br/>
-                utt_id: 260-123286-0008<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_mid_width_emitting__1c1ceac0.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -1157,12 +1035,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and mid-distance, directed to the right, while a microphone sits low and mid-distance, directed back-right and up, with a direct path of 4-8m, and early reflections bouncing off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>BUT I MEAN TO HAVE MY INNINGS BEFORE LONG</div>
-              <div class='t2r-context-meta'>
-                Trial 27/30<br/>
-                utt_id: 8455-210777-0021<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_high_and_mid_distance_direc_2ff657fc.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -1199,12 +1071,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and left, directed upwards and front-left, with the microphone placed high and right, directed rightwards, capturing direct sound from 2-4 meters away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>HELLO BERTIE ANY GOOD IN YOUR MIND</div>
-              <div class='t2r-context-meta'>
-                Trial 28/30<br/>
-                utt_id: 1089-134686-0003<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_high_and_left_directed_upwa_62455883.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -1241,12 +1107,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and mid-distance, directed to the right, with the microphone placed mid-distance, high, and directed forward and down, capturing direct sound from 2-4 meters away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>IT WAS IDLE FOR HIM TO MOVE HIMSELF TO BE GENEROUS TOWARDS THEM TO TELL HIMSELF THAT IF HE EVER CAME TO THEIR GATES STRIPPED OF HIS PRIDE BEATEN AND IN BEGGAR&#x27;S WEEDS THAT THEY WOULD BE GENEROUS TOWARDS HIM LOVING HIM AS THEMSELVES</div>
-              <div class='t2r-context-meta'>
-                Trial 29/30<br/>
-                utt_id: 1089-134691-0012<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_high_and_mid_distance_direc_ba70b525.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -1283,12 +1143,6 @@ pages:
               <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed high and far from the left wall, with early reflections bouncing off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>MAKE ACQUAINTANCE WITH MISTER JAGO SIT TOGETHER</div>
-              <div class='t2r-context-meta'>
-                Trial 30/30<br/>
-                utt_id: 5142-36377-0012<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_mid_width_emitting_fro_30ac72cc.wav
-              </div>
               <div class='t2r-context-note'>
                 KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
                 EN: Rate based on reverberation match to the image/prompt and overall naturalness.
@@ -1315,10 +1169,11 @@ pages:
       content: |-
         <div class='t2r-context-card'>
           <div class='t2r-context-label'>Thank You / 감사합니다</div>
+          <p style='text-align:center; margin:0.4em 0 0.9em 0;'><img class='t2r-thankyou-image' src='design/images/epic.jpg' alt='Thank you image' /></p>
           <p><strong>KO</strong> 참여해 주셔서 감사합니다. 아래 제출 버튼을 눌러 결과를 저장해 주세요.</p>
           <p><strong>EN</strong> Thank you for participating. Please press submit below to save your results.</p>
-          <p><strong>KO</strong> 참가 선물을 받기 위해 연구자에게 연락해 주세요: <strong>010-0000-0000</strong></p>
-          <p><strong>EN</strong> To receive the participation gift, please contact the experimenter: <strong>010-0000-0000</strong></p>
+          <p><strong>KO</strong> 참가 선물 관련 문의는 실험자에게 연락해 주세요.</p>
+          <p><strong>EN</strong> For participation gift inquiries, please contact the experimenter.</p>
         </div>
       popupContent: 'Thank you / 감사합니다'
       showResults: false
