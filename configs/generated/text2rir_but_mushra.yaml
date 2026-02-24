@@ -66,7 +66,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>YOU CAN BEGIN BY CARRYING A ROD AND PUTTING DOWN THE FIGURES</div>
               <div class='t2r-context-meta'>
-                Trial 1/50<br/>
+                Trial 1/30<br/>
                 utt_id: 4970-29093-0015<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_mid_width_emitting__0d15f5df.wav
@@ -87,7 +87,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/4970-29093-0015__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/4970-29093-0015__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/4970-29093-0015__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/4970-29093-0015__test-clean.wav'
@@ -109,7 +108,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>JUST THEN LEOCADIA CAME TO HERSELF AND EMBRACING THE CROSS SEEMED CHANGED INTO A SEA OF TEARS AND THE GENTLEMAN REMAINED IN UTTER BEWILDERMENT UNTIL HIS WIFE HAD REPEATED TO HIM FROM BEGINNING TO END LEOCADIA&#x27;S WHOLE STORY AND HE BELIEVED IT THROUGH THE BLESSED DISPENSATION OF HEAVEN WHICH HAD CONFIRMED IT BY SO MANY CONVINCING TESTIMONIES</div>
               <div class='t2r-context-meta'>
-                Trial 2/50<br/>
+                Trial 2/30<br/>
                 utt_id: 5639-40744-0030<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_wide_directed_back_and_7e34e55d.wav
@@ -130,7 +129,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/5639-40744-0030__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/5639-40744-0030__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/5639-40744-0030__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/5639-40744-0030__test-clean.wav'
@@ -152,7 +150,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>HE HAD GOT INTO HER COURTYARD</div>
               <div class='t2r-context-meta'>
-                Trial 3/50<br/>
+                Trial 3/30<br/>
                 utt_id: 8555-292519-0011<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_wide_directed_left__4f8f3924.wav
@@ -173,7 +171,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/8555-292519-0011__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/8555-292519-0011__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/8555-292519-0011__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/8555-292519-0011__test-clean.wav'
@@ -195,7 +192,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>IT SOUNDED DULL IT SOUNDED STRANGE AND ALL THE MORE SO BECAUSE OF HIS MAIN CONDITION WHICH WAS</div>
               <div class='t2r-context-meta'>
-                Trial 4/50<br/>
+                Trial 4/30<br/>
                 utt_id: 121-127105-0034<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_mid_width_emitting__d47f940f.wav
@@ -216,7 +213,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/121-127105-0034__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/121-127105-0034__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/121-127105-0034__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/121-127105-0034__test-clean.wav'
@@ -238,7 +234,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>CONTROL YOURSELVES MY DEARS REPLIED THE BOOLOOROO THE WORST PUNISHMENT I KNOW HOW TO INFLICT ON ANYONE THIS PRISONER IS ABOUT TO SUFFER YOU&#x27;LL SEE A VERY PRETTY PATCHING MY ROYAL DAUGHTERS</div>
               <div class='t2r-context-meta'>
-                Trial 5/50<br/>
+                Trial 5/30<br/>
                 utt_id: 8555-284447-0010<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_mid_width_emitting__9e0ecfac.wav
@@ -259,7 +255,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/8555-284447-0010__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/8555-284447-0010__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/8555-284447-0010__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/8555-284447-0010__test-clean.wav'
@@ -281,7 +276,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>IT IS ALSO NOTICEABLE THAT THE SERVICEABILITY OF CONSUMPTION AS A MEANS OF REPUTE AS WELL AS THE INSISTENCE ON IT AS AN ELEMENT OF DECENCY IS AT ITS BEST IN THOSE PORTIONS OF THE COMMUNITY WHERE THE HUMAN CONTACT OF THE INDIVIDUAL IS WIDEST AND THE MOBILITY OF THE POPULATION IS GREATEST</div>
               <div class='t2r-context-meta'>
-                Trial 6/50<br/>
+                Trial 6/30<br/>
                 utt_id: 3570-5695-0012<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_mid_width_emitting_fro_377d98d8.wav
@@ -302,7 +297,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/3570-5695-0012__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/3570-5695-0012__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/3570-5695-0012__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/3570-5695-0012__test-clean.wav'
@@ -324,7 +318,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>THE GREETING OF THE APOSTLE IS REFRESHING</div>
               <div class='t2r-context-meta'>
-                Trial 7/50<br/>
+                Trial 7/30<br/>
                 utt_id: 2830-3980-0040<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_high_and_left_directing_sound__e0b3ed88.wav
@@ -345,7 +339,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/2830-3980-0040__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/2830-3980-0040__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/2830-3980-0040__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/2830-3980-0040__test-clean.wav'
@@ -367,7 +360,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>NO SOUND BROKE THE STILLNESS OF THE NIGHT</div>
               <div class='t2r-context-meta'>
-                Trial 8/50<br/>
+                Trial 8/30<br/>
                 utt_id: 6930-81414-0003<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_high_and_left_directed_front_l_e838cf92.wav
@@ -388,7 +381,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/6930-81414-0003__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/6930-81414-0003__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/6930-81414-0003__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/6930-81414-0003__test-clean.wav'
@@ -410,7 +402,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>THE WIND BEING ADVERSE THE DOBRYNA DID NOT MAKE VERY RAPID PROGRESS BUT AS THE WEATHER IN SPITE OF A FEW CLOUDS REMAINED CALM AND THE SEA WAS QUITE SMOOTH SHE WAS ENABLED TO HOLD A STEADY COURSE</div>
               <div class='t2r-context-meta'>
-                Trial 9/50<br/>
+                Trial 9/30<br/>
                 utt_id: 5105-28240-0006<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_high_and_left_directing_sound__4c89067d.wav
@@ -431,7 +423,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/5105-28240-0006__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/5105-28240-0006__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/5105-28240-0006__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/5105-28240-0006__test-clean.wav'
@@ -453,7 +444,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>WHY SHOULD I RUST AND BE STUPID AND SIT IN INACTION BECAUSE I AM A GIRL</div>
               <div class='t2r-context-meta'>
-                Trial 10/50<br/>
+                Trial 10/30<br/>
                 utt_id: 4970-29095-0034<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_mid_width_emitting__bcdcf67d.wav
@@ -474,7 +465,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/4970-29095-0034__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/4970-29095-0034__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/4970-29095-0034__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/4970-29095-0034__test-clean.wav'
@@ -496,7 +486,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>NOW WHEN HAS HORROR EVER EXCLUDED STUDY</div>
               <div class='t2r-context-meta'>
-                Trial 11/50<br/>
+                Trial 11/30<br/>
                 utt_id: 4507-16021-0014<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_high_and_mid_distance_direc_ce31ccaa.wav
@@ -517,7 +507,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/4507-16021-0014__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/4507-16021-0014__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/4507-16021-0014__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/4507-16021-0014__test-clean.wav'
@@ -539,7 +528,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>I COULD NOT SEE MY BOY INJURED EXCELLENCE FOR BUT DOING HIS DUTY AS ONE OF CUMBERLAND&#x27;S SONS</div>
               <div class='t2r-context-meta'>
-                Trial 12/50<br/>
+                Trial 12/30<br/>
                 utt_id: 61-70968-0017<br/>
                 room: CR2<br/>
                 rir_gt_name: in_a_very_large_hotel_conference_room_with_glass_and_brick_walls_carpeted_floor_and_wooden_ceiling_sound_em_9f9498a1.wav
@@ -560,7 +549,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/61-70968-0017__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/61-70968-0017__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/61-70968-0017__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/61-70968-0017__test-clean.wav'
@@ -582,7 +570,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>I THANK HIM AND TAKE MY LEAVE</div>
               <div class='t2r-context-meta'>
-                Trial 13/50<br/>
+                Trial 13/30<br/>
                 utt_id: 3729-6852-0021<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_positioned_high_and_mid_width_emitting_to_th_9a985b47.wav
@@ -603,7 +591,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/3729-6852-0021__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/3729-6852-0021__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/3729-6852-0021__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/3729-6852-0021__test-clean.wav'
@@ -625,7 +612,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>I NEVER HAD ANY FAMILY</div>
               <div class='t2r-context-meta'>
-                Trial 14/50<br/>
+                Trial 14/30<br/>
                 utt_id: 3729-6852-0010<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_positioned_high_and_mid_width_directing_soun_06f17666.wav
@@ -646,7 +633,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/3729-6852-0010__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/3729-6852-0010__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/3729-6852-0010__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/3729-6852-0010__test-clean.wav'
@@ -668,7 +654,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>WE HAVE COME FROM A FAR LONELIER PLACE THAN THIS A LONELIER PLACE</div>
               <div class='t2r-context-meta'>
-                Trial 15/50<br/>
+                Trial 15/30<br/>
                 utt_id: 1284-1180-0012<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_wide_directed_left__d62d1442.wav
@@ -689,7 +675,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/1284-1180-0012__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/1284-1180-0012__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/1284-1180-0012__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/1284-1180-0012__test-clean.wav'
@@ -711,7 +696,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>ONE HARDLY LIKES TO THROW SUSPICION WHERE THERE ARE NO PROOFS</div>
               <div class='t2r-context-meta'>
-                Trial 16/50<br/>
+                Trial 16/30<br/>
                 utt_id: 1580-141083-0040<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_mid_width_emitting_fro_78f71fb7.wav
@@ -732,7 +717,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/1580-141083-0040__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/1580-141083-0040__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/1580-141083-0040__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/1580-141083-0040__test-clean.wav'
@@ -754,7 +738,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>I HAD TO READ IT OVER CAREFULLY AS THE TEXT MUST BE ABSOLUTELY CORRECT</div>
               <div class='t2r-context-meta'>
-                Trial 17/50<br/>
+                Trial 17/30<br/>
                 utt_id: 1580-141083-0004<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_high_to_the_left_with__8cd63d4a.wav
@@ -775,7 +759,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/1580-141083-0004__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/1580-141083-0004__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/1580-141083-0004__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/1580-141083-0004__test-clean.wav'
@@ -797,7 +780,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>IT BLAZED UP FAMOUSLY HELP HELP</div>
               <div class='t2r-context-meta'>
-                Trial 18/50<br/>
+                Trial 18/30<br/>
                 utt_id: 672-122797-0031<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_high_and_mid_distance_direc_b885f85e.wav
@@ -818,7 +801,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/672-122797-0031__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/672-122797-0031__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/672-122797-0031__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/672-122797-0031__test-clean.wav'
@@ -840,7 +822,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>MARY TAYLOR HOWEVER RELATED THE TALE OF ZORA TO MISSUS GREY&#x27;S PRIVATE EAR LATER</div>
               <div class='t2r-context-meta'>
-                Trial 19/50<br/>
+                Trial 19/30<br/>
                 utt_id: 1995-1836-0013<br/>
                 room: CR2<br/>
                 rir_gt_name: in_a_very_large_hotel_conference_room_with_glass_and_brick_walls_carpeted_floor_and_wooden_ceiling_sound_em_2272fc51.wav
@@ -861,7 +843,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/1995-1836-0013__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/1995-1836-0013__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/1995-1836-0013__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/1995-1836-0013__test-clean.wav'
@@ -883,7 +864,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>THUS IT IS THAT THE HONOR OF THREE IS SAVED OUR COUNTRY&#x27;S OUR MASTER&#x27;S AND OUR OWN</div>
               <div class='t2r-context-meta'>
-                Trial 20/50<br/>
+                Trial 20/30<br/>
                 utt_id: 6930-75918-0015<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_wide_directed_left__2dd35ac1.wav
@@ -904,7 +885,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/6930-75918-0015__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/6930-75918-0015__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/6930-75918-0015__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/6930-75918-0015__test-clean.wav'
@@ -926,7 +906,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>AMONG THE COUNTRY POPULATION ITS PLACE IS TO SOME EXTENT TAKEN BY SAVINGS AND HOME COMFORTS KNOWN THROUGH THE MEDIUM OF NEIGHBORHOOD GOSSIP SUFFICIENTLY TO SERVE THE LIKE GENERAL PURPOSE OF PECUNIARY REPUTE</div>
               <div class='t2r-context-meta'>
-                Trial 21/50<br/>
+                Trial 21/30<br/>
                 utt_id: 3570-5695-0014<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_mid_width_emitting_fro_4386bccc.wav
@@ -947,7 +927,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/3570-5695-0014__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/3570-5695-0014__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/3570-5695-0014__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/3570-5695-0014__test-clean.wav'
@@ -969,7 +948,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>THEN TURNING TO JANE SHE ASKED IN A SOMEWHAT ALTERED TONE HAS SHE BEEN A GOOD GIRL JANE</div>
               <div class='t2r-context-meta'>
-                Trial 22/50<br/>
+                Trial 22/30<br/>
                 utt_id: 7021-79740-0007<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_high_and_mid_distance_directed_e6716f63.wav
@@ -990,7 +969,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/7021-79740-0007__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/7021-79740-0007__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/7021-79740-0007__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/7021-79740-0007__test-clean.wav'
@@ -1012,7 +990,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>AFTER AN APPRENTICESHIP ON A MERCHANT SHIP HE HAD ENTERED THE IMPERIAL NAVY AND HAD ALREADY REACHED THE RANK OF LIEUTENANT WHEN THE COUNT APPOINTED HIM TO THE CHARGE OF HIS OWN PRIVATE YACHT IN WHICH HE WAS ACCUSTOMED TO SPEND BY FAR THE GREATER PART OF HIS TIME THROUGHOUT THE WINTER GENERALLY CRUISING IN THE MEDITERRANEAN WHILST IN THE SUMMER HE VISITED MORE NORTHERN WATERS</div>
               <div class='t2r-context-meta'>
-                Trial 23/50<br/>
+                Trial 23/30<br/>
                 utt_id: 5105-28241-0001<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_high_and_mid_distance_directed_832fe2ed.wav
@@ -1033,7 +1011,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/5105-28241-0001__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/5105-28241-0001__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/5105-28241-0001__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/5105-28241-0001__test-clean.wav'
@@ -1055,7 +1032,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>AT THE SUDDEN SHARP STING OF IT THE GREAT BIRD TURNED HIS HEAD AND NOTICED FOR THE FIRST TIME THE FISHERMAN STANDING ON THE BANK</div>
               <div class='t2r-context-meta'>
-                Trial 24/50<br/>
+                Trial 24/30<br/>
                 utt_id: 7176-88083-0025<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_wide_directed_back_and_b406fa90.wav
@@ -1076,7 +1053,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/7176-88083-0025__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/7176-88083-0025__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/7176-88083-0025__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/7176-88083-0025__test-clean.wav'
@@ -1098,7 +1074,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>UP IN THE SICK ROOM ZORA LAY ON THE LITTLE WHITE BED</div>
               <div class='t2r-context-meta'>
-                Trial 25/50<br/>
+                Trial 25/30<br/>
                 utt_id: 1995-1837-0022<br/>
                 room: CR2<br/>
                 rir_gt_name: in_a_very_large_hotel_conference_room_with_glass_and_brick_walls_carpeted_floor_and_wooden_ceiling_sound_em_5c0a3012.wav
@@ -1119,7 +1095,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/1995-1837-0022__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/1995-1837-0022__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/1995-1837-0022__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/1995-1837-0022__test-clean.wav'
@@ -1141,7 +1116,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>THEREFORE DON&#x27;T TALK TO ME ABOUT VIEWS AND PROSPECTS</div>
               <div class='t2r-context-meta'>
-                Trial 26/50<br/>
+                Trial 26/30<br/>
                 utt_id: 260-123286-0008<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_mid_width_emitting__1c1ceac0.wav
@@ -1162,7 +1137,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/260-123286-0008__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/260-123286-0008__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/260-123286-0008__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/260-123286-0008__test-clean.wav'
@@ -1184,7 +1158,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>BUT I MEAN TO HAVE MY INNINGS BEFORE LONG</div>
               <div class='t2r-context-meta'>
-                Trial 27/50<br/>
+                Trial 27/30<br/>
                 utt_id: 8455-210777-0021<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_high_and_mid_distance_direc_2ff657fc.wav
@@ -1205,7 +1179,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/8455-210777-0021__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/8455-210777-0021__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/8455-210777-0021__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/8455-210777-0021__test-clean.wav'
@@ -1227,7 +1200,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>HELLO BERTIE ANY GOOD IN YOUR MIND</div>
               <div class='t2r-context-meta'>
-                Trial 28/50<br/>
+                Trial 28/30<br/>
                 utt_id: 1089-134686-0003<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_high_and_left_directed_upwa_62455883.wav
@@ -1248,7 +1221,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/1089-134686-0003__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/1089-134686-0003__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/1089-134686-0003__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/1089-134686-0003__test-clean.wav'
@@ -1270,7 +1242,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>IT WAS IDLE FOR HIM TO MOVE HIMSELF TO BE GENEROUS TOWARDS THEM TO TELL HIMSELF THAT IF HE EVER CAME TO THEIR GATES STRIPPED OF HIS PRIDE BEATEN AND IN BEGGAR&#x27;S WEEDS THAT THEY WOULD BE GENEROUS TOWARDS HIM LOVING HIM AS THEMSELVES</div>
               <div class='t2r-context-meta'>
-                Trial 29/50<br/>
+                Trial 29/30<br/>
                 utt_id: 1089-134691-0012<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_high_and_mid_distance_direc_ba70b525.wav
@@ -1291,7 +1263,6 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/1089-134691-0012__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/1089-134691-0012__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/1089-134691-0012__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/1089-134691-0012__test-clean.wav'
@@ -1313,7 +1284,7 @@ pages:
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>MAKE ACQUAINTANCE WITH MISTER JAGO SIT TOGETHER</div>
               <div class='t2r-context-meta'>
-                Trial 30/50<br/>
+                Trial 30/30<br/>
                 utt_id: 5142-36377-0012<br/>
                 room: L207<br/>
                 rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_mid_width_emitting_fro_30ac72cc.wav
@@ -1334,871 +1305,10 @@ pages:
       randomize: true
       showConditionNames: false
       stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/5142-36377-0012__test-clean.wav'
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/5142-36377-0012__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/5142-36377-0012__test-clean.wav'
           B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/5142-36377-0012__test-clean.wav'
           ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/5142-36377-0012__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_031_8555-284447-0019'
-      name: 'Trial 31'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/1.jpg' alt='Room image for trial 31' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance, directed down, with direct sound traveling 2-4m, and early reflections bouncing off nearby surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>BEFORE ANY COULD STOP HIM HE BUTTED HIS MAJESTY SO FURIOUSLY THAT THE KING SOARED FAR INTO THE AIR AND TUMBLED IN A HEAP AMONG THE BENCHES WHERE HE LAY MOANING AND GROANING</div>
-              <div class='t2r-context-meta'>
-                Trial 31/50<br/>
-                utt_id: 8555-284447-0019<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_mid_width_emitting__c99b6335.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/8555-284447-0019__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/8555-284447-0019__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/8555-284447-0019__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/8555-284447-0019__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/8555-284447-0019__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/8555-284447-0019__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_032_7021-85628-0011'
-      name: 'Trial 32'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/7.jpg' alt='Room image for trial 32' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and to the right, emitting towards the front, with a microphone placed low and to the front, capturing direct sound and early reflections off nearby surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>THE PRINCESS SAT DOWN UNDER A BLUE CANOPY WITH BOUQUETS OF ROSES AND SHE LET ANDERS SIT IN A GOLDEN CHAIR BY HER SIDE</div>
-              <div class='t2r-context-meta'>
-                Trial 32/50<br/>
-                utt_id: 7021-85628-0011<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_high_and_to_the_right_emitting_0e86dadc.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/7021-85628-0011__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/7021-85628-0011__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/7021-85628-0011__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/7021-85628-0011__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/7021-85628-0011__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/7021-85628-0011__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_033_5105-28240-0008'
-      name: 'Trial 33'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/5.jpg' alt='Room image for trial 33' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and left, directing sound upwards and to the front-left, with the microphone placed mid-room, facing left and down, capturing direct sound from 2-4 meters away, and early reflections off nearby surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>A NARROW CHANNEL FORMED A PASSAGE THROUGH THE RIDGE OF ROCKS THAT PROTECTED IT FROM THE OPEN SEA AND WHICH EVEN IN THE ROUGHEST WEATHER WOULD ENSURE THE CALMNESS OF ITS WATERS</div>
-              <div class='t2r-context-meta'>
-                Trial 33/50<br/>
-                utt_id: 5105-28240-0008<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_high_and_left_directing_sound__b6edc74a.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/5105-28240-0008__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/5105-28240-0008__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/5105-28240-0008__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/5105-28240-0008__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/5105-28240-0008__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/5105-28240-0008__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_034_260-123440-0008'
-      name: 'Trial 34'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/8.jpg' alt='Room image for trial 34' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and wide, directed back and right, with the microphone placed high and far, directed forward and down, capturing direct sound from 2-4 meters away, and early reflections off nearby surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>I&#x27;LL TRY IF I KNOW ALL THE THINGS I USED TO KNOW</div>
-              <div class='t2r-context-meta'>
-                Trial 34/50<br/>
-                utt_id: 260-123440-0008<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_wide_directed_back__035617aa.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/260-123440-0008__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/260-123440-0008__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/260-123440-0008__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/260-123440-0008__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/260-123440-0008__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/260-123440-0008__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_035_6829-68771-0019'
-      name: 'Trial 35'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/3.jpg' alt='Room image for trial 35' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed high and low in width, directed right, with a direct path of 2-4 meters, and early reflections bouncing off nearby furniture and walls.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>SHE WAS DRESSED IN THE REGULATION COSTUME OF THE MAIDS AT ELMHURST A PLAIN BLACK GOWN WITH WHITE APRON AND CAP</div>
-              <div class='t2r-context-meta'>
-                Trial 35/50<br/>
-                utt_id: 6829-68771-0019<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_mid_width_emitting__d18c0104.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/6829-68771-0019__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/6829-68771-0019__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/6829-68771-0019__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/6829-68771-0019__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/6829-68771-0019__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/6829-68771-0019__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_036_908-31957-0015'
-      name: 'Trial 36'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/9.jpg' alt='Room image for trial 36' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and mid-distance, directed right and level, with the mic placed mid-distance, low, and directed right and level, capturing direct sound from 4-8m away, and early reflections off nearby surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>THAT WAS THE CHRISM OF LOVE WHICH LOVE&#x27;S OWN CROWN WITH SANCTIFYING SWEETNESS DID PRECEDE THE THIRD UPON MY LIPS WAS FOLDED DOWN IN PERFECT PURPLE STATE SINCE WHEN INDEED I HAVE BEEN PROUD AND SAID MY LOVE MY OWN</div>
-              <div class='t2r-context-meta'>
-                Trial 36/50<br/>
-                utt_id: 908-31957-0015<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_high_and_mid_distance_directed_1cf2a8e7.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/908-31957-0015__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/908-31957-0015__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/908-31957-0015__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/908-31957-0015__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/908-31957-0015__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/908-31957-0015__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_037_2830-3980-0047'
-      name: 'Trial 37'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/5.jpg' alt='Room image for trial 37' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and mid-distance, directed to the right, with the microphone placed low and mid-distance, directed back-right and up, capturing direct sound from 4-8m away, and early reflections off nearby surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>TO DO SO IS TO LOSE GOD ALTOGETHER BECAUSE GOD BECOMES INTOLERABLE WHEN WE SEEK TO MEASURE AND TO COMPREHEND HIS INFINITE MAJESTY</div>
-              <div class='t2r-context-meta'>
-                Trial 37/50<br/>
-                utt_id: 2830-3980-0047<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_high_and_mid_distance_directed_32802f9e.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/2830-3980-0047__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/2830-3980-0047__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/2830-3980-0047__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/2830-3980-0047__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/2830-3980-0047__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/2830-3980-0047__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_038_237-126133-0014'
-      name: 'Trial 38'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/4.jpg' alt='Room image for trial 38' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and mid-distance, directed to the right, with the microphone placed low and near the front wall, capturing direct sound and early reflections off nearby surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>ASKED PHRONSIE IN INTENSE INTEREST SLIPPING DOWN OUT OF POLLY&#x27;S ARMS AND CROWDING UP CLOSE TO JASPER&#x27;S SIDE</div>
-              <div class='t2r-context-meta'>
-                Trial 38/50<br/>
-                utt_id: 237-126133-0014<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_high_and_mid_distance_direc_79d9b7f7.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/237-126133-0014__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/237-126133-0014__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/237-126133-0014__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/237-126133-0014__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/237-126133-0014__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/237-126133-0014__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_039_7729-102255-0007'
-      name: 'Trial 39'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/Hotel_SkalskyDvur_ConferenceRoom2/7.jpg' alt='Room image for trial 39' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a very large hotel conference room with glass and brick walls, carpeted floor, and wooden ceiling, sound emanates from a source positioned low and wide, directed backwards and level, with the microphone placed low and wide, directed forward and up, at a direct path distance of 1-2 meters, with early reflections bouncing off wooden desks and chairs.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>HIS RECEPTION SPEECH AT WESTPORT IN WHICH HE MAINTAINED THE LEGALITY OF THE LEGISLATURE AND HIS DETERMINATION TO ENFORCE THEIR LAWS DELIGHTED HIS PRO SLAVERY AUDITORS</div>
-              <div class='t2r-context-meta'>
-                Trial 39/50<br/>
-                utt_id: 7729-102255-0007<br/>
-                room: CR2<br/>
-                rir_gt_name: in_a_very_large_hotel_conference_room_with_glass_and_brick_walls_carpeted_floor_and_wooden_ceiling_sound_em_17ffc496.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/7729-102255-0007__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/7729-102255-0007__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/7729-102255-0007__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/7729-102255-0007__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/7729-102255-0007__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/7729-102255-0007__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_040_8555-284449-0003'
-      name: 'Trial 40'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/1.jpg' alt='Room image for trial 40' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left, with the microphone placed high and mid-width, directed left and down, capturing direct sound from 2-4 meters away, and early reflections off nearby surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>WHEN THE BLUESKINS SAW GHIP GHISIZZLE THEY RAISED ANOTHER GREAT SHOUT FOR HE WAS THE FAVORITE OF THE SOLDIERS AND VERY POPULAR WITH ALL THE PEOPLE</div>
-              <div class='t2r-context-meta'>
-                Trial 40/50<br/>
-                utt_id: 8555-284449-0003<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_mid_width_emitting__e92f4cbc.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/8555-284449-0003__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/8555-284449-0003__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/8555-284449-0003__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/8555-284449-0003__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/8555-284449-0003__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/8555-284449-0003__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_041_3570-5695-0015'
-      name: 'Trial 41'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/6.jpg' alt='Room image for trial 41' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed low and mid-height, with direct path around 2-4 meters, and early reflections bouncing off nearby surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>THE RESULT IS A GREAT MOBILITY OF THE LABOR EMPLOYED IN PRINTING PERHAPS GREATER THAN IN ANY OTHER EQUALLY WELL DEFINED AND CONSIDERABLE BODY OF WORKMEN</div>
-              <div class='t2r-context-meta'>
-                Trial 41/50<br/>
-                utt_id: 3570-5695-0015<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_mid_width_emitting_fro_6db4ba9b.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/3570-5695-0015__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/3570-5695-0015__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/3570-5695-0015__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/3570-5695-0015__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/3570-5695-0015__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/3570-5695-0015__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_042_4970-29093-0012'
-      name: 'Trial 42'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/8.jpg' alt='Room image for trial 42' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and high to the side, emitting towards the left at level height, while a microphone is placed high and low, facing front and up, with a direct path of 4-8 meters, amidst medium furniture density and various reflective surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>BUT PHILIP DID AFFORD IT AND HE WROTE THANKING HIS FRIENDS AND DECLINING BECAUSE HE SAID THE POLITICAL SCHEME WOULD FAIL AND OUGHT TO FAIL</div>
-              <div class='t2r-context-meta'>
-                Trial 42/50<br/>
-                utt_id: 4970-29093-0012<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_high_to_the_side_em_c6f49500.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/4970-29093-0012__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/4970-29093-0012__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/4970-29093-0012__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/4970-29093-0012__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/4970-29093-0012__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/4970-29093-0012__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_043_8455-210777-0065'
-      name: 'Trial 43'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/8.jpg' alt='Room image for trial 43' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and mid-width, directing sound to the right, with the microphone placed low, mid-depth, and high, pointing back-left, capturing direct sound from 4-8 meters away, and early reflections off nearby surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>I SHALL BE HAPPY TO TAKE CHARGE OF THEM SAID SIR FERDINANDO</div>
-              <div class='t2r-context-meta'>
-                Trial 43/50<br/>
-                utt_id: 8455-210777-0065<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_high_and_mid_width_directin_5e1e04d2.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/8455-210777-0065__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/8455-210777-0065__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/8455-210777-0065__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/8455-210777-0065__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/8455-210777-0065__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/8455-210777-0065__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_044_7729-102255-0039'
-      name: 'Trial 44'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/Hotel_SkalskyDvur_ConferenceRoom2/5.jpg' alt='Room image for trial 44' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a very large hotel conference room with glass and brick walls, carpeted floor, and wooden ceiling, sound emanates from a source positioned mid-width, mid-depth, and mid-height, directed front-right, captured by a mic placed high, low depth, and low height, directed front and down, with direct path over 16m, and early reflections off nearby wooden desks and chairs.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>THE INMATES BEING REMOVED AT THE APPOINTED HOUR A FEW CANNON BALLS WERE FIRED THROUGH THE STONE WALLS</div>
-              <div class='t2r-context-meta'>
-                Trial 44/50<br/>
-                utt_id: 7729-102255-0039<br/>
-                room: CR2<br/>
-                rir_gt_name: in_a_very_large_hotel_conference_room_with_glass_and_brick_walls_carpeted_floor_and_wooden_ceiling_sound_em_6352566c.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/7729-102255-0039__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/7729-102255-0039__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/7729-102255-0039__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/7729-102255-0039__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/7729-102255-0039__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/7729-102255-0039__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_045_121-121726-0010'
-      name: 'Trial 45'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/1.jpg' alt='Room image for trial 45' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed low, high, and directed downwards, with a direct path of 1-2 meters, and early reflections bouncing off nearby surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>HOUSECLEANING A DOMESTIC UPHEAVAL THAT MAKES IT EASY FOR THE GOVERNMENT TO ENLIST ALL THE SOLDIERS IT NEEDS</div>
-              <div class='t2r-context-meta'>
-                Trial 45/50<br/>
-                utt_id: 121-121726-0010<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_mid_width_emitting__0d1f88e9.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/121-121726-0010__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/121-121726-0010__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/121-121726-0010__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/121-121726-0010__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/121-121726-0010__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/121-121726-0010__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_046_5639-40744-0003'
-      name: 'Trial 46'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/5.jpg' alt='Room image for trial 46' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance away, with direct sound traveling 1-2m from the source, passing above and to the left, while early reflections bounce off nearby surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>IN A MOMENT HE COMMUNICATED HIS THOUGHTS TO HIS COMPANIONS AND IN THE NEXT MOMENT THEY RESOLVED TO TURN BACK AND CARRY HER OFF TO PLEASE RODOLFO FOR THE RICH WHO ARE OPEN HANDED ALWAYS FIND PARASITES READY TO ENCOURAGE THEIR BAD PROPENSITIES AND THUS TO CONCEIVE THIS WICKED DESIGN TO COMMUNICATE IT APPROVE IT RESOLVE ON RAVISHING LEOCADIA AND TO CARRY THAT DESIGN INTO EFFECT WAS THE WORK OF A MOMENT</div>
-              <div class='t2r-context-meta'>
-                Trial 46/50<br/>
-                utt_id: 5639-40744-0003<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_mid_width_emitting_fro_a95fbb50.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/5639-40744-0003__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/5639-40744-0003__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/5639-40744-0003__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/5639-40744-0003__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/5639-40744-0003__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/5639-40744-0003__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_047_4992-41806-0007'
-      name: 'Trial 47'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/5.jpg' alt='Room image for trial 47' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and wide, directed left and level, with the microphone placed low and close to a wall, capturing direct sound from 2-4 meters away, as well as early reflections off nearby surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>OLIVE HAD PAINTED THE MOTTO ON A LONG NARROW PANEL OF CANVAS AND GIVING IT TO MISTER POPHAM STOOD BY THE FIRESIDE WHILE HE DEFTLY FITTED IT INTO THE PLACE PREPARED FOR IT</div>
-              <div class='t2r-context-meta'>
-                Trial 47/50<br/>
-                utt_id: 4992-41806-0007<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_low_and_wide_directed_left__b262b4de.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/4992-41806-0007__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/4992-41806-0007__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/4992-41806-0007__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/4992-41806-0007__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/4992-41806-0007__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/4992-41806-0007__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_048_61-70970-0017'
-      name: 'Trial 48'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/Hotel_SkalskyDvur_ConferenceRoom2/6.jpg' alt='Room image for trial 48' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a very large hotel conference room with glass walls, wooden ceiling, and carpeted floor, a sound source is positioned high and wide, directed backwards and level, while a microphone is placed high and wide, but close to the floor, directed forwards and downwards, capturing direct sound from over 16 meters away, with early reflections bouncing off wooden ceiling and glass walls.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>REST AND BE STILL UNTIL I WARN YOU</div>
-              <div class='t2r-context-meta'>
-                Trial 48/50<br/>
-                utt_id: 61-70970-0017<br/>
-                room: CR2<br/>
-                rir_gt_name: in_a_very_large_hotel_conference_room_with_glass_walls_wooden_ceiling_and_carpeted_floor_a_sound_source_is__dadc0f0b.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/61-70970-0017__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/61-70970-0017__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/61-70970-0017__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/61-70970-0017__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/61-70970-0017__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/61-70970-0017__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_049_61-70970-0024'
-      name: 'Trial 49'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/5.jpg' alt='Room image for trial 49' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and left, directed upwards and front-left, with the microphone placed high and right, directed rightwards, capturing direct sound from 2-4 meters away, and early reflections off nearby surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>THEY MOVED THEREAFTER CAUTIOUSLY ABOUT THE HUT GROPING BEFORE AND ABOUT THEM TO FIND SOMETHING TO SHOW THAT WARRENTON HAD FULFILLED HIS MISSION</div>
-              <div class='t2r-context-meta'>
-                Trial 49/50<br/>
-                utt_id: 61-70970-0024<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_surfaces_a_sound_source_is_positioned_high_and_left_directed_upwa_01ac8cc9.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/61-70970-0024__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/61-70970-0024__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/61-70970-0024__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/61-70970-0024__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/61-70970-0024__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/61-70970-0024__test-clean.wav'
-      switchBack: false
-    - type: 'mushra'
-      id: 'trial_050_5142-33396-0052'
-      name: 'Trial 50'
-      content: |-
-        <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/8.jpg' alt='Room image for trial 50' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and high to the left, with the microphone placed high and close to the wall, capturing direct sound and early reflections off nearby surfaces.</div>
-              <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
-              <div class='t2r-context-meta'>HERE IS A RING FOR SIF THE FRIENDLY AND HERE IS A BRACELET A SWORD WOULD NOT BE ASHAMED TO HANG AT YOUR SIDE</div>
-              <div class='t2r-context-meta'>
-                Trial 50/50<br/>
-                utt_id: 5142-33396-0052<br/>
-                room: L207<br/>
-                rir_gt_name: in_a_small_office_with_concrete_and_glass_walls_a_sound_source_is_positioned_low_and_high_to_the_left_with__75ff6ed3.wav
-              </div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
-            </div>
-          </div>
-        </div>
-      showWaveform: false
-      enableLooping: true
-      strict: false
-      reference: 'external_data/text2rir_but_mushra/latest_gt/5142-33396-0052__test-clean.wav'
-      createAnchor35: false
-      createAnchor70: false
-      randomize: true
-      showConditionNames: false
-      stimuli:
-          HIDDEN_REF_GT: 'external_data/text2rir_but_mushra/latest_gt/5142-33396-0052__test-clean.wav'
-          T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/5142-33396-0052__test-clean.wav'
-          B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/5142-33396-0052__test-clean.wav'
-          B2_GEN: 'external_data/text2rir_but_mushra/baseline2_gen/5142-33396-0052__test-clean.wav'
-          ANCHOR_LP3500: 'external_data/text2rir_but_mushra/anchor_lp3500/5142-33396-0052__test-clean.wav'
       switchBack: false
     - type: 'finish'
       name: 'Finish / 종료'

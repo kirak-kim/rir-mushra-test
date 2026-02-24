@@ -77,8 +77,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--num-trials",
         type=int,
-        default=50,
-        help="Number of trials to include (default: 50; use <=0 for all).",
+        default=30,
+        help="Number of trials to include (default: 30; use <=0 for all).",
     )
     p.add_argument(
         "--seed",
@@ -619,7 +619,6 @@ def main() -> int:
         wav_name = f"{utt_id}__{split}.wav"
 
         audio_urls = {
-            "HIDDEN_REF_GT": f"{url_bases['latest_gt']}/{wav_name}",
             "T2R_GEN": f"{url_bases['latest_gen']}/{wav_name}",
             "B1_GEN": f"{url_bases['baseline1_gen']}/{wav_name}",
             "B2_GEN": f"{url_bases['baseline2_gen']}/{wav_name}",
@@ -633,7 +632,7 @@ def main() -> int:
             if not dry_abs.exists():
                 raise FileNotFoundError(f"Dry reference missing for {utt_id}: {dry_abs}")
         else:
-            reference_url = audio_urls["HIDDEN_REF_GT"]
+            reference_url = f"{url_bases['latest_gt']}/{wav_name}"
 
         image_abs = Path(row["image_path_abs"])
         image_rel = image_abs.relative_to(image_root_abs).as_posix()
@@ -675,7 +674,7 @@ def main() -> int:
             "reference_url",
             "prompt",
             "speech_text",
-        ] + [f"stim_{k}" for k in ["HIDDEN_REF_GT", "T2R_GEN", "B1_GEN", "B2_GEN", "ANCHOR_LP3500"]]
+        ] + [f"stim_{k}" for k in ["T2R_GEN", "B1_GEN", "B2_GEN", "ANCHOR_LP3500"]]
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
         for row in rows_for_config:

@@ -13,7 +13,7 @@
 ## 포함된 변경사항 (KO)
 - `mushra` page `content`를 HTML 블록으로 렌더링하도록 수정 (이미지/레이아웃용)
 - 이미지/프롬프트 패널용 CSS 추가
-- 자동 config 생성 스크립트 추가: `scripts/build_text2rir_but_mushra.py` (기본 50-trial random, Google Form mirror 전송 설정 포함)
+- 자동 config 생성 스크립트 추가: `scripts/build_text2rir_but_mushra.py` (기본 30-trial random, Google Form mirror 전송 설정 포함)
 
 ## Included Changes (EN)
 - `mushra` page `content` now renders as an HTML block (works with images/layouts)
@@ -32,7 +32,7 @@
 
 ```bash
 cd /home/kirak/webMUSHRA-master
-python3 scripts/build_text2rir_but_mushra.py --num-trials 50 --seed 42
+python3 scripts/build_text2rir_but_mushra.py --num-trials 30 --seed 42
 ```
 
 - 생성 config / Generated config:
@@ -70,7 +70,7 @@ Replace the host/path with your local server path.
   - `ANCHOR_LP3500`
 
 ## 주요 옵션 (KO)
-- `--num-trials N`: trial 수 (기본 20, pilot용)
+- `--num-trials N`: trial 수 (기본 30)
 - `--google-form-url`, `--google-form-entry-id`: Google Form mirror 전송
 - `--contact-phone`: 종료 페이지 연락처 문구
 - `--sample-mode random|head`: 샘플링 방식
@@ -82,7 +82,7 @@ Replace the host/path with your local server path.
 - `--no-condition-randomize`: 조건 랜덤 순서 비활성화
 
 ## Key Options (EN)
-- `--num-trials N`: number of trials (default 50)
+- `--num-trials N`: number of trials (default 30)
 - `--google-form-url`, `--google-form-entry-id`: Google Form mirror upload
 - `--contact-phone`: phone number shown on the final page
 - `--sample-mode random|head`: selection mode
