@@ -502,16 +502,20 @@ def main() -> int:
     link_targets = {
         "latest_gt": latest_root / "gt",
         "latest_gen": latest_root / "gen",
-        "baseline1_gt": baseline1_root / "gt",
         "baseline1_gen": baseline1_root / "gen",
-        "baseline2_gt": baseline2_root / "gt",
         "baseline2_gen": baseline2_root / "gen",
         "anchor_lp3500": anchor_dir,
-        "librispeech": librispeech_root,
         "but_images": image_root_abs,
     }
+    if args.reference_mode == "dry":
+        link_targets["librispeech"] = librispeech_root
 
     if not args.no_symlinks:
+        # Remove stale symlinks from previous runs (important for GitHub Pages/Jekyll).
+        for stale_name in ["baseline1_gt", "baseline2_gt", "librispeech"]:
+            stale_path = link_root / stale_name
+            if stale_name not in link_targets and stale_path.is_symlink():
+                stale_path.unlink()
         for name, target in link_targets.items():
             check_path_exists(target, f"symlink target {name}")
             ensure_symlink(link_root / name, target)
