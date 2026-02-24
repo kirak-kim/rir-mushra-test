@@ -215,6 +215,9 @@ def ensure_dir(path: Path) -> None:
 
 def ensure_symlink(link_path: Path, target: Path) -> None:
     if link_path.exists() or link_path.is_symlink():
+        if link_path.exists() and link_path.is_dir() and not link_path.is_symlink():
+            # Already bundled as a real directory for static hosting (e.g., GitHub Pages).
+            return
         if link_path.is_symlink() and link_path.resolve() == target.resolve():
             return
         raise RuntimeError(f"Symlink path already exists and points elsewhere: {link_path}")
