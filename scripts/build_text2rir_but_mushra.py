@@ -131,7 +131,7 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--test-name",
-        default="Text-to-RIR / Image-to-RIR MUSHRA (BUT-ReverbDB)",
+        default="Text-to-RIR / Image-to-RIR MUSHRA",
         help="webMUSHRA testname.",
     )
     p.add_argument(
@@ -260,29 +260,20 @@ def add_yaml_block(lines: List[str], indent: int, key: str, text: str) -> None:
 
 
 def build_intro_html(reference_mode: str) -> str:
-    if reference_mode == "dry":
-        ref_note_ko = "Reference 버튼은 원본 건조 음성(dry speech)입니다. 방의 정답 음향이 아니라 음성 내용 확인용입니다."
-        ref_note_en = "The Reference button plays dry speech (original LibriSpeech). It is for speech-content clarity, not the target room acoustics."
-    else:
-        ref_note_ko = "Reference 버튼은 최신 시스템의 GT convolved speech입니다."
-        ref_note_en = "The Reference button plays the latest-system GT convolved speech."
-
     return "\n".join(
         [
             "<div class='t2r-context-card'>",
             "  <div class='t2r-context-label'>Experiment Guide / 실험 안내</div>",
-            "  <p><strong>KO</strong> 각 페이지에서 방 이미지와 프롬프트를 보고, 제시된 음성들 중 어떤 샘플이 해당 공간/프롬프트의 잔향 특성을 더 자연스럽게 반영하는지 평가해 주세요. 슬라이더는 높을수록 더 좋은 점수입니다.</p>",
-            "  <p><strong>EN</strong> On each page, inspect the room image and prompt, then rate how well each presented speech sample matches the expected reverberation characteristics of that room/prompt. Higher scores mean better quality/match.</p>",
-            f"  <p><strong>KO</strong> {html.escape(ref_note_ko)}</p>",
-            f"  <p><strong>EN</strong> {html.escape(ref_note_en)}</p>",
-            "  <p><strong>KO</strong> 원본(reference)과 동일한 조건(숨은 기준음, hidden reference)이 포함되어 있습니다. 해당 조건에는 100점을 주고, 나머지 조건은 자유롭게 평가해 주세요.</p>",
-            "  <p><strong>EN</strong> One condition is identical to the reference (a hidden reference). Please give that condition a score of 100, and rate the other conditions freely.</p>",
-            "  <p><strong>KO</strong> 품질이 낮은 신호가 포함되어 있을 수 있습니다.</p>",
-            "  <p><strong>EN</strong> Lower-quality signals may be included.</p>",
-            "  <p><strong>KO</strong> 본 실험에서는 방의 이미지와 텍스트 설명이 함께 제공되며, 해당 방 정보와 들리는 음성의 공간감/잔향 특성이 얼마나 잘 일치하는지 평가해 주세요.</p>",
-            "  <p><strong>EN</strong> In the main experiment, a room image and text description are provided together. Please rate how well the perceived spatial/reverberation characteristics of the speech match that room information.</p>",
-            "  <p><strong>KO</strong> 조건 이름은 숨겨질 수 있으며 재생 순서는 무작위입니다.</p>",
-            "  <p><strong>EN</strong> Condition identities may be hidden, and playback order is randomized.</p>",
+            "  <p><strong>KO</strong> 본 연구는 AI로 생성하는 실내 음향을 평가하는 연구입니다. 생성된 각 실내에서 재생된 발화 음성이 얼마나 해당 공간과 어울리는지를 평가하는 실험입니다.</p>",
+            "  <p><strong>EN</strong> This study evaluates AI-generated room acoustics. You will judge how well the speech sounds as if it were played in each generated room.</p>",
+            "  <p><strong>KO</strong> 반드시 헤드폰/이어폰을 착용하고, 듣기 편한 적절한 볼륨으로 조절한 후 실험에 참여해 주세요.</p>",
+            "  <p><strong>EN</strong> Please wear headphones/earphones and adjust to a comfortable, appropriate listening volume before starting the experiment.</p>",
+            "  <p><strong>KO</strong> 각 페이지에서 방 이미지와 텍스트 설명을 보고, 제시된 condition 음성들 중 어떤 음성이 해당 공간의 음향적 특성을 잘 담고 있는지(해당 공간에서 재생되는 것 같은지) 평가해 주세요. 가장 좋은 점수는 100점, 가장 안 좋은 점수는 0점입니다.</p>",
+            "  <p><strong>EN</strong> On each page, inspect the room image and text description, then rate which condition audio best captures that room's acoustic characteristics (i.e., sounds like it is being played in that room). The best score is 100 and the worst score is 0.</p>",
+            "  <p><strong>KO</strong> Reference는 정답 오디오이며 들으시는 condition 중 하나는 reference와 완전히 동일합니다. 해당 condition은 100점으로 평가하셔야 합니다. 나머지 condition은 해당 원본의 퀄리티를 기준으로 상대적으로 자유롭게 평가해 주세요.</p>",
+            "  <p><strong>EN</strong> The Reference is the correct audio, and one of the conditions is identical to the Reference. That condition should receive 100 points. Rate the other conditions freely relative to that original-quality reference.</p>",
+            "  <p><strong>KO</strong> 품질이 확연히 낮은 신호가 포함되어 있을 수 있습니다.</p>",
+            "  <p><strong>EN</strong> Clearly lower-quality signals may be included.</p>",
             "</div>",
         ]
     )
@@ -307,6 +298,8 @@ def build_practice_trial_html() -> str:
             "  <div class='t2r-context-label'>Practice Trial / 연습 Trial</div>",
             "  <p><strong>KO</strong> 이 페이지에서 조작법을 익힌 뒤 다음 페이지부터 본 실험이 시작됩니다.</p>",
             "  <p><strong>EN</strong> Use this page to learn the controls. The main experiment starts on the next page.</p>",
+            "  <p><strong>KO</strong> Reference 아래에 있는 재생 버튼을 눌러 정답 오디오를 들으시고, 왼쪽의 condition audio들도 재생해 보세요.</p>",
+            "  <p><strong>EN</strong> Press the play button under Reference to hear the correct audio, then try playing the condition audios on the left.</p>",
             "  <p><strong>KO</strong> 연습 페이지의 Condition 중 하나는 Reference(정답 신호)와 동일합니다. 그 Condition에는 반드시 100점을 주고, 그 100점을 기준으로 나머지 Condition들을 상대적으로 평가해 보세요.</p>",
             "  <p><strong>EN</strong> One practice condition is identical to the Reference (correct signal). Give that condition a score of 100, then rate the remaining conditions relative to that 100-point reference.</p>",
             "  <p><strong>KO</strong> 좌측의 <strong>Stop</strong> 버튼은 전체 재생을 멈춥니다.</p>",
@@ -337,19 +330,17 @@ def build_trial_content_html(trial_idx: int, total_trials: int, row: dict) -> st
     return "\n".join(
         [
             "<div class='t2r-context-card'>",
-            "  <div class='t2r-context-grid'>",
-            "    <figure class='t2r-context-image-wrap'>",
-            "      <div class='t2r-context-label'>Room Image / 공간 이미지</div>",
-            f"      <img class='t2r-context-image' src='{image_url}' alt='Room image for trial {trial_idx}' />",
-            "    </figure>",
-            "    <div>",
-            "      <div class='t2r-context-label'>Prompt / 프롬프트</div>",
-            f"      <div class='t2r-context-prompt'>{prompt}</div>",
+            "  <div>",
+            "    <div class='t2r-context-label'>Text Description / 텍스트 설명</div>",
+            f"    <div class='t2r-context-prompt'>{prompt}</div>",
             speech_block.rstrip("\n"),
-            "      <div class='t2r-context-note'>",
-            "        KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>",
-            "        EN: Rate based on reverberation match to the image/prompt and overall naturalness.",
-            "      </div>",
+            "    <div class='t2r-context-image-center-wrap'>",
+            "      <div class='t2r-context-label'>Room Image / 공간 이미지</div>",
+            f"      <img class='t2r-context-image t2r-context-image-centered' src='{image_url}' alt='Room image for trial {trial_idx}' />",
+            "    </div>",
+            "    <div class='t2r-context-note'>",
+            "      KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>",
+            "      EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.",
             "    </div>",
             "  </div>",
             "</div>",
@@ -365,8 +356,8 @@ def build_finish_html(contact_phone: str) -> str:
             "  <p style='text-align:center; margin:0.4em 0 0.9em 0;'><img class='t2r-thankyou-image' src='design/images/epic.jpg' alt='Thank you image' /></p>",
             "  <p><strong>KO</strong> 참여해 주셔서 감사합니다. 아래 제출 버튼을 눌러 결과를 저장해 주세요.</p>",
             "  <p><strong>EN</strong> Thank you for participating. Please press submit below to save your results.</p>",
-            "  <p><strong>KO</strong> 참가 선물 관련 문의는 실험자에게 연락해 주세요.</p>",
-            "  <p><strong>EN</strong> For participation gift inquiries, please contact the experimenter.</p>",
+            "  <p><strong>KO</strong> 실험진행자(김기락)에게 연락 주시면 감사의 선물을 드리도록 하겠습니다! 한국에 계신 분들께는 바나나 우유 기프티콘, 토론토에 계신 분들께는 페레로 로쉐 한 알을 드릴 예정이며 카톡/dm 등으로 말씀 주세요! 실험 참여해주셔서 정말 감사합니다!</p>",
+            "  <p><strong>EN</strong> Please contact the experiment organizer (G. Kim) for a small thank-you gift after participation. Thank you very much for taking part in the study!</p>",
             "</div>",
         ]
     )

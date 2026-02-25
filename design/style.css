@@ -255,6 +255,16 @@ td.stopButton {
   background: #fff;
 }
 
+.t2r-context-image-center-wrap {
+  text-align: center;
+  margin-top: 0.8em;
+}
+
+.t2r-context-image-centered {
+  margin: 0 auto;
+  width: min(100%, 520px);
+}
+
 .t2r-context-label {
   font-size: 0.82em;
   font-weight: bold;

@@ -1,4 +1,4 @@
-testname: 'Text-to-RIR / Image-to-RIR MUSHRA (BUT-ReverbDB)'
+testname: 'Text-to-RIR / Image-to-RIR MUSHRA'
 testId: 'text2rir_but_mushra'
 language: 'en'
 bufferSize: 2048
@@ -43,18 +43,16 @@ pages:
       content: |-
         <div class='t2r-context-card'>
           <div class='t2r-context-label'>Experiment Guide / 실험 안내</div>
-          <p><strong>KO</strong> 각 페이지에서 방 이미지와 프롬프트를 보고, 제시된 음성들 중 어떤 샘플이 해당 공간/프롬프트의 잔향 특성을 더 자연스럽게 반영하는지 평가해 주세요. 슬라이더는 높을수록 더 좋은 점수입니다.</p>
-          <p><strong>EN</strong> On each page, inspect the room image and prompt, then rate how well each presented speech sample matches the expected reverberation characteristics of that room/prompt. Higher scores mean better quality/match.</p>
-          <p><strong>KO</strong> Reference 버튼은 최신 시스템의 GT convolved speech입니다.</p>
-          <p><strong>EN</strong> The Reference button plays the latest-system GT convolved speech.</p>
-          <p><strong>KO</strong> 원본(reference)과 동일한 조건(숨은 기준음, hidden reference)이 포함되어 있습니다. 해당 조건에는 100점을 주고, 나머지 조건은 자유롭게 평가해 주세요.</p>
-          <p><strong>EN</strong> One condition is identical to the reference (a hidden reference). Please give that condition a score of 100, and rate the other conditions freely.</p>
-          <p><strong>KO</strong> 품질이 낮은 신호가 포함되어 있을 수 있습니다.</p>
-          <p><strong>EN</strong> Lower-quality signals may be included.</p>
-          <p><strong>KO</strong> 본 실험에서는 방의 이미지와 텍스트 설명이 함께 제공되며, 해당 방 정보와 들리는 음성의 공간감/잔향 특성이 얼마나 잘 일치하는지 평가해 주세요.</p>
-          <p><strong>EN</strong> In the main experiment, a room image and text description are provided together. Please rate how well the perceived spatial/reverberation characteristics of the speech match that room information.</p>
-          <p><strong>KO</strong> 조건 이름은 숨겨질 수 있으며 재생 순서는 무작위입니다.</p>
-          <p><strong>EN</strong> Condition identities may be hidden, and playback order is randomized.</p>
+          <p><strong>KO</strong> 본 연구는 AI로 생성하는 실내 음향을 평가하는 연구입니다. 생성된 각 실내에서 재생된 발화 음성이 얼마나 해당 공간과 어울리는지를 평가하는 실험입니다.</p>
+          <p><strong>EN</strong> This study evaluates AI-generated room acoustics. You will judge how well the speech sounds as if it were played in each generated room.</p>
+          <p><strong>KO</strong> 반드시 헤드폰/이어폰을 착용하고, 듣기 편한 적절한 볼륨으로 조절한 후 실험에 참여해 주세요.</p>
+          <p><strong>EN</strong> Please wear headphones/earphones and adjust to a comfortable, appropriate listening volume before starting the experiment.</p>
+          <p><strong>KO</strong> 각 페이지에서 방 이미지와 텍스트 설명을 보고, 제시된 condition 음성들 중 어떤 음성이 해당 공간의 음향적 특성을 잘 담고 있는지(해당 공간에서 재생되는 것 같은지) 평가해 주세요. 가장 좋은 점수는 100점, 가장 안 좋은 점수는 0점입니다.</p>
+          <p><strong>EN</strong> On each page, inspect the room image and text description, then rate which condition audio best captures that room's acoustic characteristics (i.e., sounds like it is being played in that room). The best score is 100 and the worst score is 0.</p>
+          <p><strong>KO</strong> Reference는 정답 오디오이며 들으시는 condition 중 하나는 reference와 완전히 동일합니다. 해당 condition은 100점으로 평가하셔야 합니다. 나머지 condition은 해당 원본의 퀄리티를 기준으로 상대적으로 자유롭게 평가해 주세요.</p>
+          <p><strong>EN</strong> The Reference is the correct audio, and one of the conditions is identical to the Reference. That condition should receive 100 points. Rate the other conditions freely relative to that original-quality reference.</p>
+          <p><strong>KO</strong> 품질이 확연히 낮은 신호가 포함되어 있을 수 있습니다.</p>
+          <p><strong>EN</strong> Clearly lower-quality signals may be included.</p>
         </div>
     - type: 'mushra'
       id: 'practice_trial_controls'
@@ -64,6 +62,8 @@ pages:
           <div class='t2r-context-label'>Practice Trial / 연습 Trial</div>
           <p><strong>KO</strong> 이 페이지에서 조작법을 익힌 뒤 다음 페이지부터 본 실험이 시작됩니다.</p>
           <p><strong>EN</strong> Use this page to learn the controls. The main experiment starts on the next page.</p>
+          <p><strong>KO</strong> Reference 아래에 있는 재생 버튼을 눌러 정답 오디오를 들으시고, 왼쪽의 condition audio들도 재생해 보세요.</p>
+          <p><strong>EN</strong> Press the play button under Reference to hear the correct audio, then try playing the condition audios on the left.</p>
           <p><strong>KO</strong> 연습 페이지의 Condition 중 하나는 Reference(정답 신호)와 동일합니다. 그 Condition에는 반드시 100점을 주고, 그 100점을 기준으로 나머지 Condition들을 상대적으로 평가해 보세요.</p>
           <p><strong>EN</strong> One practice condition is identical to the Reference (correct signal). Give that condition a score of 100, then rate the remaining conditions relative to that 100-point reference.</p>
           <p><strong>KO</strong> 좌측의 <strong>Stop</strong> 버튼은 전체 재생을 멈춥니다.</p>
@@ -93,20 +93,18 @@ pages:
       name: 'Trial 1'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/8.jpg' alt='Room image for trial 1' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance away, with early reflections bouncing off nearby furniture and surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance away, with early reflections bouncing off nearby furniture and surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>YOU CAN BEGIN BY CARRYING A ROD AND PUTTING DOWN THE FIGURES</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/8.jpg' alt='Room image for trial 1' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -129,20 +127,18 @@ pages:
       name: 'Trial 2'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/4.jpg' alt='Room image for trial 2' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and wide, directed back and right, with the microphone placed high and wide, directed forward and down, capturing direct sound from 4-8 meters away, early reflections off nearby surfaces, and late reverberation cues.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and wide, directed back and right, with the microphone placed high and wide, directed forward and down, capturing direct sound from 4-8 meters away, early reflections off nearby surfaces, and late reverberation cues.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>JUST THEN LEOCADIA CAME TO HERSELF AND EMBRACING THE CROSS SEEMED CHANGED INTO A SEA OF TEARS AND THE GENTLEMAN REMAINED IN UTTER BEWILDERMENT UNTIL HIS WIFE HAD REPEATED TO HIM FROM BEGINNING TO END LEOCADIA&#x27;S WHOLE STORY AND HE BELIEVED IT THROUGH THE BLESSED DISPENSATION OF HEAVEN WHICH HAD CONFIRMED IT BY SO MANY CONVINCING TESTIMONIES</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/4.jpg' alt='Room image for trial 2' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -165,20 +161,18 @@ pages:
       name: 'Trial 3'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/9.jpg' alt='Room image for trial 3' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and wide, directed left and level, with the microphone placed low and close to a wall, capturing direct sound from 2-4 meters away, as well as early reflections off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and wide, directed left and level, with the microphone placed low and close to a wall, capturing direct sound from 2-4 meters away, as well as early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>HE HAD GOT INTO HER COURTYARD</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/9.jpg' alt='Room image for trial 3' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -201,20 +195,18 @@ pages:
       name: 'Trial 4'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/8.jpg' alt='Room image for trial 4' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance away, with direct path at 1-2m and left-up orientation, amidst medium furniture density and scattered objects.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance away, with direct path at 1-2m and left-up orientation, amidst medium furniture density and scattered objects.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>IT SOUNDED DULL IT SOUNDED STRANGE AND ALL THE MORE SO BECAUSE OF HIS MAIN CONDITION WHICH WAS</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/8.jpg' alt='Room image for trial 4' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -237,20 +229,18 @@ pages:
       name: 'Trial 5'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/7.jpg' alt='Room image for trial 5' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed high, low-depth, and mid-height, with a direct path of 4-8 meters, and early reflections bouncing off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed high, low-depth, and mid-height, with a direct path of 4-8 meters, and early reflections bouncing off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>CONTROL YOURSELVES MY DEARS REPLIED THE BOOLOOROO THE WORST PUNISHMENT I KNOW HOW TO INFLICT ON ANYONE THIS PRISONER IS ABOUT TO SUFFER YOU&#x27;LL SEE A VERY PRETTY PATCHING MY ROYAL DAUGHTERS</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/7.jpg' alt='Room image for trial 5' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -273,20 +263,18 @@ pages:
       name: 'Trial 6'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/1.jpg' alt='Room image for trial 6' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed low, high, and directed downwards, with a direct path of 1-2 meters, amidst medium furniture density and background noise.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed low, high, and directed downwards, with a direct path of 1-2 meters, amidst medium furniture density and background noise.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>IT IS ALSO NOTICEABLE THAT THE SERVICEABILITY OF CONSUMPTION AS A MEANS OF REPUTE AS WELL AS THE INSISTENCE ON IT AS AN ELEMENT OF DECENCY IS AT ITS BEST IN THOSE PORTIONS OF THE COMMUNITY WHERE THE HUMAN CONTACT OF THE INDIVIDUAL IS WIDEST AND THE MOBILITY OF THE POPULATION IS GREATEST</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/1.jpg' alt='Room image for trial 6' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -309,20 +297,18 @@ pages:
       name: 'Trial 7'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/8.jpg' alt='Room image for trial 7' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and left, directing sound upwards and to the front-left, with the microphone placed low and right, pointing down, capturing direct sound from 4-8 meters away, and early reflections off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and left, directing sound upwards and to the front-left, with the microphone placed low and right, pointing down, capturing direct sound from 4-8 meters away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>THE GREETING OF THE APOSTLE IS REFRESHING</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/8.jpg' alt='Room image for trial 7' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -345,20 +331,18 @@ pages:
       name: 'Trial 8'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/6.jpg' alt='Room image for trial 8' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and left, directed front-left and up, with the microphone placed low and mid, directed back-right and up, at a direct-path distance of 2-4m, amidst medium furniture density and background noise.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and left, directed front-left and up, with the microphone placed low and mid, directed back-right and up, at a direct-path distance of 2-4m, amidst medium furniture density and background noise.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>NO SOUND BROKE THE STILLNESS OF THE NIGHT</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/6.jpg' alt='Room image for trial 8' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -381,20 +365,18 @@ pages:
       name: 'Trial 9'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/7.jpg' alt='Room image for trial 9' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and left, directing sound upwards and to the front-left, with the microphone placed low and mid, facing front, and at a direct-path distance of several meters, capturing early reflections off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and left, directing sound upwards and to the front-left, with the microphone placed low and mid, facing front, and at a direct-path distance of several meters, capturing early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>THE WIND BEING ADVERSE THE DOBRYNA DID NOT MAKE VERY RAPID PROGRESS BUT AS THE WEATHER IN SPITE OF A FEW CLOUDS REMAINED CALM AND THE SEA WAS QUITE SMOOTH SHE WAS ENABLED TO HOLD A STEADY COURSE</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/7.jpg' alt='Room image for trial 9' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -417,20 +399,18 @@ pages:
       name: 'Trial 10'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/2.jpg' alt='Room image for trial 10' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance away, with early reflections bouncing off nearby furniture and surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance away, with early reflections bouncing off nearby furniture and surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>WHY SHOULD I RUST AND BE STUPID AND SIT IN INACTION BECAUSE I AM A GIRL</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/2.jpg' alt='Room image for trial 10' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -453,20 +433,18 @@ pages:
       name: 'Trial 11'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/1.jpg' alt='Room image for trial 11' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and mid-distance, directed to the right, with the microphone placed low and mid-distance, directed backwards and downwards, capturing direct sound from 4-8 meters away, and early reflections off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and mid-distance, directed to the right, with the microphone placed low and mid-distance, directed backwards and downwards, capturing direct sound from 4-8 meters away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>NOW WHEN HAS HORROR EVER EXCLUDED STUDY</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/1.jpg' alt='Room image for trial 11' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -489,20 +467,18 @@ pages:
       name: 'Trial 12'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/Hotel_SkalskyDvur_ConferenceRoom2/7.jpg' alt='Room image for trial 12' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a very large hotel conference room with glass and brick walls, carpeted floor, and wooden ceiling, sound emanates from a source positioned low and mid-distance, directed frontward, with the mic placed high above, directed front-left and down, capturing direct sound from 8-16m away, and early reflections off nearby wooden desks and chairs.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a very large hotel conference room with glass and brick walls, carpeted floor, and wooden ceiling, sound emanates from a source positioned low and mid-distance, directed frontward, with the mic placed high above, directed front-left and down, capturing direct sound from 8-16m away, and early reflections off nearby wooden desks and chairs.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>I COULD NOT SEE MY BOY INJURED EXCELLENCE FOR BUT DOING HIS DUTY AS ONE OF CUMBERLAND&#x27;S SONS</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/Hotel_SkalskyDvur_ConferenceRoom2/7.jpg' alt='Room image for trial 12' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -525,20 +501,18 @@ pages:
       name: 'Trial 13'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/2.jpg' alt='Room image for trial 13' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source positioned high and mid-width, emitting to the right, is captured by a microphone placed high and low in width, directed right, with a direct path of 1-2 meters, amidst medium furniture density and background noise.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source positioned high and mid-width, emitting to the right, is captured by a microphone placed high and low in width, directed right, with a direct path of 1-2 meters, amidst medium furniture density and background noise.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>I THANK HIM AND TAKE MY LEAVE</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/2.jpg' alt='Room image for trial 13' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -561,20 +535,18 @@ pages:
       name: 'Trial 14'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/9.jpg' alt='Room image for trial 14' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source positioned high and mid-width, directing sound to the right, is captured by a microphone placed high and mid-width, angled down and left, with a direct path of 1-2 meters, amidst medium furniture density and background noise.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source positioned high and mid-width, directing sound to the right, is captured by a microphone placed high and mid-width, angled down and left, with a direct path of 1-2 meters, amidst medium furniture density and background noise.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>I NEVER HAD ANY FAMILY</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/9.jpg' alt='Room image for trial 14' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -597,20 +569,18 @@ pages:
       name: 'Trial 15'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/4.jpg' alt='Room image for trial 15' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and wide, directed left and level, with the microphone placed low and wide, directed right and level, at a direct-path distance of 0.5-1m, amidst medium furniture density and background noise, with early reflections bouncing off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and wide, directed left and level, with the microphone placed low and wide, directed right and level, at a direct-path distance of 0.5-1m, amidst medium furniture density and background noise, with early reflections bouncing off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>WE HAVE COME FROM A FAR LONELIER PLACE THAN THIS A LONELIER PLACE</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/4.jpg' alt='Room image for trial 15' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -633,20 +603,18 @@ pages:
       name: 'Trial 16'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/7.jpg' alt='Room image for trial 16' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance, directed right, with a direct path of 2-4 meters, and early reflections bouncing off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance, directed right, with a direct path of 2-4 meters, and early reflections bouncing off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>ONE HARDLY LIKES TO THROW SUSPICION WHERE THERE ARE NO PROOFS</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/7.jpg' alt='Room image for trial 16' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -669,20 +637,18 @@ pages:
       name: 'Trial 17'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/8.jpg' alt='Room image for trial 17' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and high to the left, with the microphone placed low and mid, directed back-left and up, capturing direct sound from 1-2m away, and early reflections off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and high to the left, with the microphone placed low and mid, directed back-left and up, capturing direct sound from 1-2m away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>I HAD TO READ IT OVER CAREFULLY AS THE TEXT MUST BE ABSOLUTELY CORRECT</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/8.jpg' alt='Room image for trial 17' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -705,20 +671,18 @@ pages:
       name: 'Trial 18'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/4.jpg' alt='Room image for trial 18' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and mid-distance, directed right and level, with the mic placed high, low-depth, and directed front and down, capturing direct sound from 1-2m away, and early reflections off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and mid-distance, directed right and level, with the mic placed high, low-depth, and directed front and down, capturing direct sound from 1-2m away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>IT BLAZED UP FAMOUSLY HELP HELP</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/4.jpg' alt='Room image for trial 18' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -741,20 +705,18 @@ pages:
       name: 'Trial 19'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/Hotel_SkalskyDvur_ConferenceRoom2/2.jpg' alt='Room image for trial 19' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a very large hotel conference room with glass and brick walls, carpeted floor, and wooden ceiling, sound emanates from a high and distant source positioned above and behind, directed backwards and level, captured by a microphone placed low and far, angled backwards and downwards, with a direct path of 4-8 meters, and early reflections off wooden desks and chairs.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a very large hotel conference room with glass and brick walls, carpeted floor, and wooden ceiling, sound emanates from a high and distant source positioned above and behind, directed backwards and level, captured by a microphone placed low and far, angled backwards and downwards, with a direct path of 4-8 meters, and early reflections off wooden desks and chairs.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>MARY TAYLOR HOWEVER RELATED THE TALE OF ZORA TO MISSUS GREY&#x27;S PRIVATE EAR LATER</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/Hotel_SkalskyDvur_ConferenceRoom2/2.jpg' alt='Room image for trial 19' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -777,20 +739,18 @@ pages:
       name: 'Trial 20'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/2.jpg' alt='Room image for trial 20' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and wide, directed left and level, with the microphone placed low and close to a wall, capturing direct sound from 2-4 meters away, as well as early reflections off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and wide, directed left and level, with the microphone placed low and close to a wall, capturing direct sound from 2-4 meters away, as well as early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>THUS IT IS THAT THE HONOR OF THREE IS SAVED OUR COUNTRY&#x27;S OUR MASTER&#x27;S AND OUR OWN</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/2.jpg' alt='Room image for trial 20' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -813,20 +773,18 @@ pages:
       name: 'Trial 21'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/1.jpg' alt='Room image for trial 21' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed high and mid-width, directed downwards, with a direct path of 2-4 meters, and early reflections bouncing off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed high and mid-width, directed downwards, with a direct path of 2-4 meters, and early reflections bouncing off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>AMONG THE COUNTRY POPULATION ITS PLACE IS TO SOME EXTENT TAKEN BY SAVINGS AND HOME COMFORTS KNOWN THROUGH THE MEDIUM OF NEIGHBORHOOD GOSSIP SUFFICIENTLY TO SERVE THE LIKE GENERAL PURPOSE OF PECUNIARY REPUTE</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/1.jpg' alt='Room image for trial 21' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -849,20 +807,18 @@ pages:
       name: 'Trial 22'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/9.jpg' alt='Room image for trial 22' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and mid-distance, directed to the right, with the microphone placed low and mid-distance, directed back-left and up, capturing direct sound from 4-8m away, and early reflections off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and mid-distance, directed to the right, with the microphone placed low and mid-distance, directed back-left and up, capturing direct sound from 4-8m away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>THEN TURNING TO JANE SHE ASKED IN A SOMEWHAT ALTERED TONE HAS SHE BEEN A GOOD GIRL JANE</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/9.jpg' alt='Room image for trial 22' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -885,20 +841,18 @@ pages:
       name: 'Trial 23'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/5.jpg' alt='Room image for trial 23' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and mid-distance, directed to the right, with the microphone placed mid-distance, directed to the right, capturing direct sound and early reflections off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned high and mid-distance, directed to the right, with the microphone placed mid-distance, directed to the right, capturing direct sound and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>AFTER AN APPRENTICESHIP ON A MERCHANT SHIP HE HAD ENTERED THE IMPERIAL NAVY AND HAD ALREADY REACHED THE RANK OF LIEUTENANT WHEN THE COUNT APPOINTED HIM TO THE CHARGE OF HIS OWN PRIVATE YACHT IN WHICH HE WAS ACCUSTOMED TO SPEND BY FAR THE GREATER PART OF HIS TIME THROUGHOUT THE WINTER GENERALLY CRUISING IN THE MEDITERRANEAN WHILST IN THE SUMMER HE VISITED MORE NORTHERN WATERS</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/5.jpg' alt='Room image for trial 23' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -921,20 +875,18 @@ pages:
       name: 'Trial 24'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/1.jpg' alt='Room image for trial 24' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and wide, directed back and right, with the microphone placed mid-width, low in depth, and low in height, directed right, capturing direct sound from 2-4 meters away, and early reflections off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and wide, directed back and right, with the microphone placed mid-width, low in depth, and low in height, directed right, capturing direct sound from 2-4 meters away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>AT THE SUDDEN SHARP STING OF IT THE GREAT BIRD TURNED HIS HEAD AND NOTICED FOR THE FIRST TIME THE FISHERMAN STANDING ON THE BANK</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/1.jpg' alt='Room image for trial 24' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -957,20 +909,18 @@ pages:
       name: 'Trial 25'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/Hotel_SkalskyDvur_ConferenceRoom2/2.jpg' alt='Room image for trial 25' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a very large hotel conference room with glass and brick walls, carpeted floor, and wooden ceiling, sound emanates from a source positioned mid-width, mid-depth, and mid-height, directed front-right, with the mic placed low-width, high-depth, and low-height, directed back and up, capturing direct sound from 4-8m away, and early reflections off distant walls and wooden desks.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a very large hotel conference room with glass and brick walls, carpeted floor, and wooden ceiling, sound emanates from a source positioned mid-width, mid-depth, and mid-height, directed front-right, with the mic placed low-width, high-depth, and low-height, directed back and up, capturing direct sound from 4-8m away, and early reflections off distant walls and wooden desks.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>UP IN THE SICK ROOM ZORA LAY ON THE LITTLE WHITE BED</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/Hotel_SkalskyDvur_ConferenceRoom2/2.jpg' alt='Room image for trial 25' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -993,20 +943,18 @@ pages:
       name: 'Trial 26'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/1.jpg' alt='Room image for trial 26' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance away, with direct path at 1-2m and left-up orientation, amidst medium furniture density and scattered objects.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed mid-distance away, with direct path at 1-2m and left-up orientation, amidst medium furniture density and scattered objects.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>THEREFORE DON&#x27;T TALK TO ME ABOUT VIEWS AND PROSPECTS</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/1.jpg' alt='Room image for trial 26' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -1029,20 +977,18 @@ pages:
       name: 'Trial 27'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/4.jpg' alt='Room image for trial 27' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and mid-distance, directed to the right, while a microphone sits low and mid-distance, directed back-right and up, with a direct path of 4-8m, and early reflections bouncing off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and mid-distance, directed to the right, while a microphone sits low and mid-distance, directed back-right and up, with a direct path of 4-8m, and early reflections bouncing off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>BUT I MEAN TO HAVE MY INNINGS BEFORE LONG</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/4.jpg' alt='Room image for trial 27' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -1065,20 +1011,18 @@ pages:
       name: 'Trial 28'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/1.jpg' alt='Room image for trial 28' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and left, directed upwards and front-left, with the microphone placed high and right, directed rightwards, capturing direct sound from 2-4 meters away, and early reflections off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and left, directed upwards and front-left, with the microphone placed high and right, directed rightwards, capturing direct sound from 2-4 meters away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>HELLO BERTIE ANY GOOD IN YOUR MIND</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/1.jpg' alt='Room image for trial 28' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -1101,20 +1045,18 @@ pages:
       name: 'Trial 29'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/5.jpg' alt='Room image for trial 29' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and mid-distance, directed to the right, with the microphone placed mid-distance, high, and directed forward and down, capturing direct sound from 2-4 meters away, and early reflections off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass surfaces, a sound source is positioned high and mid-distance, directed to the right, with the microphone placed mid-distance, high, and directed forward and down, capturing direct sound from 2-4 meters away, and early reflections off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>IT WAS IDLE FOR HIM TO MOVE HIMSELF TO BE GENEROUS TOWARDS THEM TO TELL HIMSELF THAT IF HE EVER CAME TO THEIR GATES STRIPPED OF HIS PRIDE BEATEN AND IN BEGGAR&#x27;S WEEDS THAT THEY WOULD BE GENEROUS TOWARDS HIM LOVING HIM AS THEMSELVES</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/5.jpg' alt='Room image for trial 29' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -1137,20 +1079,18 @@ pages:
       name: 'Trial 30'
       content: |-
         <div class='t2r-context-card'>
-          <div class='t2r-context-grid'>
-            <figure class='t2r-context-image-wrap'>
-              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
-              <img class='t2r-context-image' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/7.jpg' alt='Room image for trial 30' />
-            </figure>
-            <div>
-              <div class='t2r-context-label'>Prompt / 프롬프트</div>
-              <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed high and far from the left wall, with early reflections bouncing off nearby surfaces.</div>
+          <div>
+            <div class='t2r-context-label'>Text Description / 텍스트 설명</div>
+            <div class='t2r-context-prompt'>In a small office with concrete and glass walls, a sound source is positioned low and mid-width, emitting from the front-left towards a microphone placed high and far from the left wall, with early reflections bouncing off nearby surfaces.</div>
               <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>
               <div class='t2r-context-meta'>MAKE ACQUAINTANCE WITH MISTER JAGO SIT TOGETHER</div>
-              <div class='t2r-context-note'>
-                KO: 이미지/프롬프트와의 잔향 일치도와 자연스러움을 기준으로 평가해 주세요.<br/>
-                EN: Rate based on reverberation match to the image/prompt and overall naturalness.
-              </div>
+            <div class='t2r-context-image-center-wrap'>
+              <div class='t2r-context-label'>Room Image / 공간 이미지</div>
+              <img class='t2r-context-image t2r-context-image-centered' src='external_data/text2rir_but_mushra/but_images/VUT_FIT_L207/7.jpg' alt='Room image for trial 30' />
+            </div>
+            <div class='t2r-context-note'>
+              KO: 이미지/프롬프트와의 일치도와 자연스러움을 기준으로 평가해 주세요. Reference와 동일한 condition은 100점을 줘야 하며, 그에 상대적으로 다른 음성들의 점수를 매겨 주세요.<br/>
+              EN: Rate based on match to the image/text description and naturalness. The condition identical to the Reference should receive 100, and other conditions should be scored relative to it.
             </div>
           </div>
         </div>
@@ -1176,8 +1116,8 @@ pages:
           <p style='text-align:center; margin:0.4em 0 0.9em 0;'><img class='t2r-thankyou-image' src='design/images/epic.jpg' alt='Thank you image' /></p>
           <p><strong>KO</strong> 참여해 주셔서 감사합니다. 아래 제출 버튼을 눌러 결과를 저장해 주세요.</p>
           <p><strong>EN</strong> Thank you for participating. Please press submit below to save your results.</p>
-          <p><strong>KO</strong> 참가 선물 관련 문의는 실험자에게 연락해 주세요.</p>
-          <p><strong>EN</strong> For participation gift inquiries, please contact the experimenter.</p>
+          <p><strong>KO</strong> 실험진행자(김기락)에게 연락 주시면 감사의 선물을 드리도록 하겠습니다! 한국에 계신 분들께는 바나나 우유 기프티콘, 토론토에 계신 분들께는 페레로 로쉐 한 알을 드릴 예정이며 카톡/dm 등으로 말씀 주세요! 실험 참여해주셔서 정말 감사합니다!</p>
+          <p><strong>EN</strong> Please contact the experiment organizer (G. Kim) for a small thank-you gift after participation. Thank you very much for taking part in the study!</p>
         </div>
       popupContent: 'Thank you / 감사합니다'
       showResults: false
