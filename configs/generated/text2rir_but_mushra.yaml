@@ -93,7 +93,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: false
-      showConditionNames: true
+      showConditionNames: false
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/8555-284447-0019__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/8555-284447-0019__test-clean.wav'

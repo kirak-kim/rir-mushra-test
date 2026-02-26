@@ -825,7 +825,7 @@ def main() -> int:
             "createAnchor35": False,
             "createAnchor70": False,
             "randomize": False,
-            "showConditionNames": True,
+            "showConditionNames": False,
             "stimuli": practice_row["audio_urls"],
             "switchBack": False,
         }
