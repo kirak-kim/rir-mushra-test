@@ -226,6 +226,12 @@ td.stopButton {
   margin: 0.4em 0;
 }
 
+/* Keep jQuery Mobile score input boxes clickable above the MUSHRA guide canvas. */
+.ui-slider-input {
+  position: relative;
+  z-index: 3;
+}
+
 .t2r-context-card {
   text-align: left;
   background: #fafafa;

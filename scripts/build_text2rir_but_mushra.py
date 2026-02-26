@@ -6,6 +6,7 @@ import html
 import json
 import os
 import random
+import shutil
 import sys
 import wave
 from pathlib import Path
@@ -266,9 +267,9 @@ def build_intro_html(reference_mode: str) -> str:
             "  <div class='t2r-context-label'>Experiment Guide / 실험 안내</div>",
             "  <p><strong>KO</strong> 본 연구는 AI로 생성하는 실내 음향을 평가하는 연구입니다. 생성된 각 실내에서 재생된 발화 음성이 얼마나 해당 공간과 어울리는지를 평가하는 실험입니다.</p>",
             "  <p><strong>EN</strong> This study evaluates AI-generated room acoustics. You will judge how well the speech sounds as if it were played in each generated room.</p>",
-            "  <p><strong>KO</strong> 반드시 헤드폰/이어폰을 착용하고, 듣기 편한 적절한 볼륨으로 조절한 후 실험에 참여해 주세요.</p>",
+            "  <p><strong>KO</strong> <strong>반드시 헤드폰/이어폰</strong>을 착용하고, 듣기 편한 적절한 볼륨으로 조절한 후 실험에 참여해 주세요.</p>",
             "  <p><strong>EN</strong> Please wear headphones/earphones and adjust to a comfortable, appropriate listening volume before starting the experiment.</p>",
-            "  <p><strong>KO</strong> 각 페이지에서 방 이미지와 텍스트 설명을 보고, 제시된 condition 음성들 중 어떤 음성이 해당 공간의 음향적 특성을 잘 담고 있는지(해당 공간에서 재생되는 것 같은지, 음성이 얼마나 그럴듯하게 울리는지) 평가해 주세요. 가장 좋은 점수는 100점, 가장 안 좋은 점수는 0점입니다.</p>",
+            "  <p><strong>KO</strong> 각 페이지에서 <strong>방 이미지와 텍스트 설명</strong>을 보고, 제시된 condition 음성들 중 어떤 음성이 <strong>해당 공간의 음향적 특성을 잘 담고 있는지(해당 공간에서 재생되는 것 같은지)</strong> 평가해 주세요. 가장 좋은 점수는 100점, 가장 안 좋은 점수는 0점입니다.</p>",
             "  <p><strong>EN</strong> On each page, inspect the room image and text description, then rate which condition audio best captures that room's acoustic characteristics (i.e., sounds like it is being played in that room). The best score is 100 and the worst score is 0.</p>",
             "  <p><strong>KO</strong> Reference는 정답 오디오이며 들으시는 condition 중 하나는 reference와 완전히 동일합니다. 해당 condition은 100점으로 평가하셔야 합니다. 나머지 condition은 해당 정답의 퀄리티를 기준으로 상대적으로 자유롭게 평가해 주세요.</p>",
             "  <p><strong>EN</strong> The Reference is the correct audio, and one of the conditions is identical to the Reference. That condition should receive 100 points. Rate the other conditions freely relative to that original-quality reference.</p>",
@@ -291,7 +292,18 @@ def build_participant_form_content_html() -> str:
     )
 
 
-def build_practice_trial_html() -> str:
+def build_practice_trial_html(row: dict) -> str:
+    prompt = html.escape(row["prompt"])
+    image_url = html.escape(row["image_url"])
+    speech_text = html.escape(row.get("speech_text", ""))
+
+    speech_block = ""
+    if speech_text:
+        speech_block = (
+            "  <div class='t2r-context-label'>Speech Transcript / 음성 내용</div>\n"
+            f"  <div class='t2r-context-meta'>{speech_text}</div>\n"
+        )
+
     return "\n".join(
         [
             "<div class='t2r-context-card'>",
@@ -299,7 +311,7 @@ def build_practice_trial_html() -> str:
             "  <p><strong>KO</strong> 이 페이지에서 조작법을 익힌 뒤 다음 페이지부터 본 실험이 시작됩니다.</p>",
             "  <p><strong>EN</strong> Use this page to learn the controls. The main experiment starts on the next page.</p>",
             "  <p><strong>KO</strong> Reference 아래에 있는 재생 버튼을 눌러 정답 오디오를 들으시고, 오른쪽의 condition audio들도 재생해 보세요.</p>",
-            "  <p><strong>EN</strong> Press the play button under Reference to hear the correct audio, then try playing the condition audios on the left.</p>",
+            "  <p><strong>EN</strong> Press the play button under Reference to hear the correct audio, then try playing the condition audios on the right.</p>",
             "  <p><strong>KO</strong> 연습 페이지의 Condition 중 하나는 Reference(정답 신호)와 동일합니다. 그 Condition에는 반드시 100점을 주고, 그 100점을 기준으로 나머지 Condition들을 상대적으로 평가해 보세요.</p>",
             "  <p><strong>EN</strong> One practice condition is identical to the Reference (correct signal). Give that condition a score of 100, then rate the remaining conditions relative to that 100-point reference.</p>",
             "  <p><strong>KO</strong> 좌측의 <strong>Stop</strong> 버튼은 전체 재생을 멈춥니다.</p>",
@@ -311,8 +323,18 @@ def build_practice_trial_html() -> str:
             "  <p><strong>KO</strong> 여러 버튼을 눌러보면서 적응해 보세요. 연습 trial 결과는 제출되지 않습니다.</p>",
             "  <p><strong>EN</strong> Try multiple buttons to get comfortable. Practice-trial responses are not submitted.</p>",
             "</div>",
+            "<div class='t2r-context-card'>",
+            "  <div class='t2r-context-label'>Practice Room Context / 연습용 공간 정보</div>",
+            "  <div class='t2r-context-label'>Text Description / 텍스트 설명</div>",
+            f"  <div class='t2r-context-prompt'>{prompt}</div>",
+            speech_block.rstrip("\n"),
+            "  <div class='t2r-context-image-center-wrap'>",
+            "    <div class='t2r-context-label'>Room Image / 공간 이미지</div>",
+            f"    <img class='t2r-context-image t2r-context-image-centered' src='{image_url}' alt='Practice room image' />",
+            "  </div>",
+            "</div>",
         ]
-    )
+    ).replace("\n\n", "\n")
 
 
 def build_trial_content_html(trial_idx: int, total_trials: int, row: dict) -> str:
@@ -398,6 +420,14 @@ def pad_wav_to_frames(path: Path, target_frames: int) -> int:
         w.writeframes(raw)
 
     return target_frames - current_frames
+
+
+def copy_file_if_missing(src: Path, dst: Path) -> bool:
+    if dst.exists():
+        return False
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src, dst)
+    return True
 
 
 def align_rows_audio_lengths(repo_root: Path, rows_for_config: List[dict]) -> Tuple[int, int, int]:
@@ -577,6 +607,7 @@ def main() -> int:
     if args.sample_mode == "random":
         rng = random.Random(args.seed)
         rng.shuffle(rows)
+    ordered_rows = list(rows)
     if args.num_trials and args.num_trials > 0:
         rows = rows[: args.num_trials]
     total_trials = len(rows)
@@ -621,9 +652,7 @@ def main() -> int:
         name: f"{link_root_rel}/{name}" for name in link_targets.keys()
     }
 
-    # Build per-trial audio/image URLs and existence checks.
-    rows_for_config = []
-    for i, row in enumerate(rows, start=1):
+    def build_config_row_from_merged(row: dict, trial_index: int) -> dict:
         utt_id = row["utt_id"]
         split = row["split"]
         wav_name = f"{utt_id}__{split}.wav"
@@ -666,8 +695,59 @@ def main() -> int:
         out["reference_url"] = reference_url
         out["image_url"] = image_url
         out["audio_urls"] = audio_urls
-        out["trial_index"] = i
-        rows_for_config.append(out)
+        out["trial_index"] = trial_index
+        return out
+
+    # Build per-trial audio/image URLs and existence checks.
+    rows_for_config = []
+    for i, row in enumerate(rows, start=1):
+        rows_for_config.append(build_config_row_from_merged(row, i))
+
+    # Pick a practice sample outside the main trials whenever possible.
+    selected_utts = {r["utt_id"] for r in rows_for_config}
+    practice_source_row = None
+    for row in ordered_rows:
+        if row["utt_id"] not in selected_utts:
+            practice_source_row = row
+            break
+    if practice_source_row is None:
+        practice_source_row = ordered_rows[0]
+        print(
+            "[WARN] Could not find a non-overlapping practice row; reusing one selected trial.",
+            file=sys.stderr,
+        )
+    practice_row = build_config_row_from_merged(practice_source_row, 0)
+
+    # If link_root already contains real directories (GitHub Pages static bundle), make sure the
+    # additional practice assets (which may be outside selected main trials) are present.
+    copied_practice_assets = 0
+    if link_root.exists() and link_root.is_dir():
+        wav_name = f"{practice_row['utt_id']}__{practice_row['split']}.wav"
+        practice_copy_pairs: List[Tuple[Path, Path]] = []
+        if args.reference_mode == "latest_gt":
+            practice_copy_pairs.append(
+                (latest_root / "gt" / wav_name, REPO_ROOT / practice_row["reference_url"])
+            )
+        for stim_name, rel_url in practice_row["audio_urls"].items():
+            if stim_name == "T2R_GEN":
+                src = latest_root / "gen" / wav_name
+            elif stim_name == "B1_GEN":
+                src = baseline1_root / "gen" / wav_name
+            elif stim_name == "B2_GEN":
+                src = baseline2_root / "gen" / wav_name
+            elif stim_name == "ANCHOR_LP3500":
+                src = anchor_dir / wav_name
+            else:
+                continue
+            practice_copy_pairs.append((src, REPO_ROOT / rel_url))
+
+        practice_img_src = Path(practice_source_row["image_path_abs"])
+        practice_copy_pairs.append((practice_img_src, REPO_ROOT / practice_row["image_url"]))
+
+        for src, dst in practice_copy_pairs:
+            if dst.parent.exists() and dst.parent.is_dir() and not dst.parent.is_symlink():
+                if copy_file_if_missing(src, dst):
+                    copied_practice_assets += 1
 
     # Trial CSV for traceability / analysis.
     with output_trial_csv.open("w", encoding="utf-8", newline="") as f:
@@ -737,20 +817,16 @@ def main() -> int:
             "type": "mushra",
             "id": "practice_trial_controls",
             "name": "Practice Trial",
-            "content": build_practice_trial_html(),
+            "content": build_practice_trial_html(practice_row),
             "showWaveform": bool(args.show_waveform),
             "enableLooping": not args.disable_looping,
             "strict": False,
-            "reference": "configs/resources/audio/mono_ref.wav",
+            "reference": practice_row["reference_url"],
             "createAnchor35": False,
             "createAnchor70": False,
             "randomize": False,
             "showConditionNames": True,
-            "stimuli": {
-                "Practice_A": "configs/resources/audio/mono_c1.wav",
-                "Practice_B": "configs/resources/audio/mono_c2.wav",
-                "Practice_C": "configs/resources/audio/mono_c3.wav",
-            },
+            "stimuli": practice_row["audio_urls"],
             "switchBack": False,
         }
     )
@@ -851,7 +927,8 @@ def main() -> int:
     output_config.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     if not args.no_align_audio_lengths:
-        changed_trials, changed_files, max_added_frames = align_rows_audio_lengths(REPO_ROOT, rows_for_config)
+        align_rows = [practice_row] + rows_for_config
+        changed_trials, changed_files, max_added_frames = align_rows_audio_lengths(REPO_ROOT, align_rows)
         print(
             f"[INFO] Audio length alignment: trials_adjusted={changed_trials}, "
             f"files_padded={changed_files}, max_added_frames={max_added_frames}"
@@ -860,6 +937,9 @@ def main() -> int:
     print(f"[OK] Wrote config: {output_config}")
     print(f"[OK] Wrote trial CSV: {output_trial_csv}")
     print(f"[INFO] Trials selected: {total_trials} / {len(merged_rows)}")
+    print(f"[INFO] Practice sample overlaps main trials: {'yes' if practice_row['utt_id'] in selected_utts else 'no'}")
+    if copied_practice_assets:
+        print(f"[INFO] Copied additional practice assets into bundled dirs: {copied_practice_assets}")
     print(f"[INFO] Link root: {link_root} (symlinks {'disabled' if args.no_symlinks else 'enabled'})")
     if args.reference_mode == "dry" and args.dry_ext == "flac":
         print(
