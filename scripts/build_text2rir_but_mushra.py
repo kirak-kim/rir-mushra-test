@@ -117,9 +117,17 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--show-condition-names",
+        dest="show_condition_names",
         action="store_true",
-        help="Show condition IDs to listeners (debug only; usually keep hidden).",
+        help="Show condition IDs to listeners (debug). Default: enabled.",
     )
+    p.add_argument(
+        "--hide-condition-names",
+        dest="show_condition_names",
+        action="store_false",
+        help="Hide condition IDs from listeners.",
+    )
+    p.set_defaults(show_condition_names=True)
     p.add_argument(
         "--no-condition-randomize",
         action="store_true",
@@ -825,7 +833,7 @@ def main() -> int:
             "createAnchor35": False,
             "createAnchor70": False,
             "randomize": False,
-            "showConditionNames": False,
+            "showConditionNames": bool(args.show_condition_names),
             "stimuli": practice_row["audio_urls"],
             "switchBack": False,
         }

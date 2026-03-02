@@ -93,7 +93,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: false
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/8555-284447-0019__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/8555-284447-0019__test-clean.wav'
@@ -127,7 +127,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/4970-29093-0015__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/4970-29093-0015__test-clean.wav'
@@ -161,7 +161,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/5639-40744-0030__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/5639-40744-0030__test-clean.wav'
@@ -195,7 +195,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/8555-292519-0011__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/8555-292519-0011__test-clean.wav'
@@ -229,7 +229,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/121-127105-0034__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/121-127105-0034__test-clean.wav'
@@ -263,7 +263,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/8555-284447-0010__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/8555-284447-0010__test-clean.wav'
@@ -297,7 +297,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/3570-5695-0012__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/3570-5695-0012__test-clean.wav'
@@ -331,7 +331,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/2830-3980-0040__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/2830-3980-0040__test-clean.wav'
@@ -365,7 +365,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/6930-81414-0003__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/6930-81414-0003__test-clean.wav'
@@ -399,7 +399,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/5105-28240-0006__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/5105-28240-0006__test-clean.wav'
@@ -433,7 +433,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/4970-29095-0034__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/4970-29095-0034__test-clean.wav'
@@ -467,7 +467,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/4507-16021-0014__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/4507-16021-0014__test-clean.wav'
@@ -501,7 +501,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/61-70968-0017__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/61-70968-0017__test-clean.wav'
@@ -535,7 +535,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/3729-6852-0021__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/3729-6852-0021__test-clean.wav'
@@ -569,7 +569,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/3729-6852-0010__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/3729-6852-0010__test-clean.wav'
@@ -603,7 +603,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/1284-1180-0012__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/1284-1180-0012__test-clean.wav'
@@ -637,7 +637,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/1580-141083-0040__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/1580-141083-0040__test-clean.wav'
@@ -671,7 +671,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/1580-141083-0004__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/1580-141083-0004__test-clean.wav'
@@ -705,7 +705,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/672-122797-0031__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/672-122797-0031__test-clean.wav'
@@ -739,7 +739,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/1995-1836-0013__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/1995-1836-0013__test-clean.wav'
@@ -773,7 +773,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/6930-75918-0015__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/6930-75918-0015__test-clean.wav'
@@ -807,7 +807,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/3570-5695-0014__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/3570-5695-0014__test-clean.wav'
@@ -841,7 +841,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/7021-79740-0007__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/7021-79740-0007__test-clean.wav'
@@ -875,7 +875,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/5105-28241-0001__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/5105-28241-0001__test-clean.wav'
@@ -909,7 +909,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/7176-88083-0025__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/7176-88083-0025__test-clean.wav'
@@ -943,7 +943,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/1995-1837-0022__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/1995-1837-0022__test-clean.wav'
@@ -977,7 +977,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/260-123286-0008__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/260-123286-0008__test-clean.wav'
@@ -1011,7 +1011,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/8455-210777-0021__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/8455-210777-0021__test-clean.wav'
@@ -1045,7 +1045,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/1089-134686-0003__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/1089-134686-0003__test-clean.wav'
@@ -1079,7 +1079,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/1089-134691-0012__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/1089-134691-0012__test-clean.wav'
@@ -1113,7 +1113,7 @@ pages:
       createAnchor35: false
       createAnchor70: false
       randomize: true
-      showConditionNames: false
+      showConditionNames: true
       stimuli:
           T2R_GEN: 'external_data/text2rir_but_mushra/latest_gen/5142-36377-0012__test-clean.wav'
           B1_GEN: 'external_data/text2rir_but_mushra/baseline1_gen/5142-36377-0012__test-clean.wav'
